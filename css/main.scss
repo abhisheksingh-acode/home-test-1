@@ -124,14 +124,16 @@ body {
   background-color: #03091d44;
   z-index: 30;
   height: 90px;
+  display: flex;
+  align-items: center;
 }
 .nav-link {
   font-size: 12px !important;
   letter-spacing: 2.5px;
   color: white !important;
   font-family: oswald light;
-  margin: 0 3px;
-  padding: 4px;
+  margin-left: 3px;
+  padding: 3px 7px;
 }
 .navigation {
   background: rgb(17, 16, 16);
@@ -157,8 +159,8 @@ body {
   /* opacity: 0.8; */
 }
 .active {
-  border: 2px solid white;
-  width: 80px;
+  border: 1px solid white;
+  width: fit-content;
   text-align: center;
 }
 .navigation ul li a:hover {
@@ -317,14 +319,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.6s ease;
+}
+.img-box-white:hover {
+  transform: scale(1.1, 1.1);
 }
 .feature-images {
   display: inline-block;
   width: 65px;
   height: 67px;
-  /* margin:; */
   filter: drop-shadow(0 0 1px #eeb436);
 }
+
 .feature-icons span {
   font-size: 19px;
   letter-spacing: 2px;
@@ -505,7 +511,7 @@ body {
   border-radius: 50%;
   background: black;
   position: absolute;
-  top: 40%;
+  top: 29%;
   left: -11%;
 }
 
@@ -541,13 +547,13 @@ body {
 /* we excel in section  */
 .excel-in-pos {
   margin-top: 102px;
-  padding: 5px;
+  padding: 7px;
   letter-spacing: 13px;
   font-size: 28px;
   position: relative;
   text-align: center;
   display: inline-block;
-  text-shadow: 0 2px 1px #20202052;
+  text-shadow: 0 1px 1px #20202052;
   color: #020b2a;
   z-index: 33;
 }
@@ -1147,6 +1153,7 @@ textarea {
     font-size: 20px;
     letter-spacing: 2px;
     padding: 20px;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
   .ul-box {
     flex-direction: column;
