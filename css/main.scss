@@ -915,7 +915,7 @@ textarea {
   height: fit-content;
   margin: 80px auto;
 }
-.grid-rows div {
+.grid-rows .row .card-white-grid {
   height: 350px;
 }
 .grid-rows .card-white-grid {
@@ -1221,7 +1221,10 @@ textarea {
   .services-tagline {
     font-size: 15px;
     letter-spacing: 1px;
+    text-align: center;
+    margin: 0;
   }
+
   .para-section {
     font-size: 13px;
     letter-spacing: 1px;
@@ -1239,5 +1242,60 @@ textarea {
   .our-presence-section img {
     display: inline-block;
     width: 300px;
+  }
+  #ourServices-home-section {
+    height: 300px;
+  }
+  .grid-rows .row .card-white-grid {
+    height: 300px;
+  }
+  .grid-row-container,
+  .grid-row-container-alt {
+    margin: 20px auto;
+  }
+  .grid-row-container .card-white-grid,
+  .grid-row-container-alt .para-grid {
+    order: 1;
+  }
+  .grid-row-container .card-white-grid,
+  .grid-row-container .para-grid {
+    order: 2;
+  }
+  .grid-rows .card-white-grid h1 {
+    font-size: 20px;
+    padding-top: 50px;
+    letter-spacing: 2px;
+    text-shadow: 0;
+  }
+  .grid-rows .para-grid p {
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .corner-shape::after {
+    top: 59%;
+    right: 29px;
+    transform: rotate(96deg) skew(133deg, 10deg);
+  }
+  .corner-shape-alt::before {
+    top: 59%;
+    left: 59px;
+    transform: rotate(-83deg) skew(133deg, 14deg);
+  }
+  .second-section-service {
+    width: 100%;
+  }
+  .service-second-section-title h1 {
+    font-size: 23px;
+    padding: 10px 50px;
+    letter-spacing: 1px;
+  }
+  .service-second-section-para {
+    font-size: 12px;
+  }
+  .how-do-we-help-title {
+    letter-spacing: 4px;
+    font-size: 20px;
   }
 }
