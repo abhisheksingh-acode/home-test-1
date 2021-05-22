@@ -587,6 +587,9 @@ body {
   position: relative;
   color: #050815;
 }
+#we-excel-in ul:last-child {
+  margin-left: 30px;
+}
 #we-excel-in ul li::before {
   content: url("");
   width: 8px;
@@ -646,7 +649,7 @@ body {
 }
 .mySwiper {
   width: 90%;
-  height: 300px;
+  height: 480px;
 }
 .slider-sd-img {
   display: inline-block;
@@ -1052,8 +1055,12 @@ textarea {
   .swiper2 {
     width: 100%;
   }
+  .swiper2 .swiper-pagination {
+    position: absolute;
+    bottom: 43px;
+  }
   .title-our-service {
-    padding: 0 !important;
+    padding: 23px 0 !important;
   }
   #our-service {
     background-position: center 250px;
@@ -1075,6 +1082,16 @@ textarea {
   .services-text h5 {
     margin-top: 25px;
     margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+  .services-text p {
+    padding: 20px 0px;
+    letter-spacing: 0px;
+    line-height: 27px;
+    margin-bottom: 0;
+    font-size: 11px;
+    width: 100%;
   }
 
   #quoteBg h1 {
@@ -1090,10 +1107,10 @@ textarea {
     padding: 8px;
     width: 80px;
     height: 80px;
-    box-shadow: 0px 0px 20px -8px rgb(104, 101, 101);
+    box-shadow: 0 0 20px -8px rgb(104, 101, 101);
   }
   .feature-icons span {
-    font-size: 14px;
+    font-size: 11px;
     width: auto;
     max-width: 200px;
   }
@@ -1102,25 +1119,42 @@ textarea {
     width: 100%;
     padding: 0;
     margin: 0;
+    font-size: 10px;
   }
+
   .feature-images {
     width: 50px;
     height: 50px;
     /* margin:; */
   }
   .wwd-h {
-    margin-top: 75px !important;
-    padding: 0;
+    margin-top: 87px !important;
+    padding: 20px 50px;
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .card-service {
+    width: 260px;
+    height: 278px;
+    padding: 2px;
   }
 
   .excel-in-pos {
-    margin-top: 100px;
-    margin-bottom: 40px;
-    font-size: 24px;
-    letter-spacing: 3px;
-    padding: 5px;
+    margin-top: 88px;
+    margin-bottom: 32px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 20px;
   }
-
+  .ul-box {
+    flex-direction: column;
+  }
+  #we-excel-in ul:last-child {
+    margin: 0;
+  }
+  #we-excel-in ul li {
+    font-size: 13.5px !important;
+  }
   #testimonials-pos {
     width: 100%;
     padding: 0;
@@ -1143,18 +1177,28 @@ textarea {
   }
   .mySwiper {
     min-width: 320px;
+    height: 450px !important;
   }
   .mySwiper > h3 {
-    width: 200px;
+    width: 288px;
+    letter-spacing: 0 !important;
+    padding: 0 10px;
+    font-size: 20px;
   }
   .form-container {
-    margin: 50px auto 0;
+    margin: 70px auto 0;
   }
-
+  .icons a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+  }
   .footer-items span {
-    font-size: 8px;
+    font-size: 7px;
   }
   .footer-items {
-    font-size: 8px;
+    font-size: 6px;
+    letter-spacing: 0;
   }
 }
