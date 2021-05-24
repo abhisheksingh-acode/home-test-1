@@ -1246,6 +1246,51 @@ textarea {
     letter-spacing: 1px;
   }
 }
+#what-sets-home-section {
+  height: 400px;
+  background: #081b3c70 url("../images/whatsetsmagi.png") center no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  .text-area-team {
+    margin-bottom: 40px;
+  }
+}
+.outer-inner-bar-div {
+  width: 80%;
+  height: 180px;
+  min-width: 300px;
+  background: white;
+  box-shadow: 3px -2px 30px -6px #0000004b;
+  border-radius: 3px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  font-family: poppin-regular;
+  font-size: 13px;
+  align-items: center;
+  position: relative;
+  .inner-nos {
+    width: 150px;
+    height: 130px;
+    background: #f9cd6d;
+    position: absolute;
+    box-shadow: 3px 4px 30px -6px #0000004b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: oswald regular;
+    top: 0;
+    left: -7px;
+    align-self: flex-start;
+  }
+  p {
+    width: 70%;
+    margin-left: 50px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .expand {

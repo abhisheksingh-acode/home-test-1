@@ -1597,6 +1597,77 @@ textarea {
   letter-spacing: 1px;
 }
 
+#what-sets-home-section {
+  height: 400px;
+  background: #081b3c70 url("../images/whatsetsmagi.png") center no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#what-sets-home-section .text-area-team {
+  margin-bottom: 40px;
+}
+
+.outer-inner-bar-div {
+  width: 80%;
+  height: 180px;
+  min-width: 300px;
+  background: white;
+  -webkit-box-shadow: 3px -2px 30px -6px #0000004b;
+          box-shadow: 3px -2px 30px -6px #0000004b;
+  border-radius: 3px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: poppin-regular;
+  font-size: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.outer-inner-bar-div .inner-nos {
+  width: 150px;
+  height: 130px;
+  background: #f9cd6d;
+  position: absolute;
+  -webkit-box-shadow: 3px 4px 30px -6px #0000004b;
+          box-shadow: 3px 4px 30px -6px #0000004b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: oswald regular;
+  top: 0;
+  left: -7px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.outer-inner-bar-div p {
+  width: 70%;
+  margin-left: 50px;
+}
+
 @media only screen and (max-width: 768px) {
   .expand {
     opacity: 1;
