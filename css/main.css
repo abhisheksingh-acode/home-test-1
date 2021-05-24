@@ -813,6 +813,12 @@ body {
   width: 250px;
   height: 200px;
   position: relative;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.cont:hover .play-center {
+  font-size: 22px;
 }
 
 .mySwiper .swiper-pagination {
@@ -857,6 +863,8 @@ body {
   position: absolute;
   width: 50px;
   height: 50px;
+  background: #ffffff;
+  color: #eeb436;
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
@@ -866,6 +874,8 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 7;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 /* footer css */
@@ -1044,7 +1054,10 @@ textarea {
 }
 
 .text-area-about,
-.text-area-services {
+.text-area-services,
+.text-area-sectors,
+.text-area-director,
+.text-area-team {
   z-index: 3;
   width: 100%;
   height: 100%;
@@ -1061,11 +1074,12 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 
 .about-home-title,
-.services-home-title {
+.services-home-title,
+.sectors-home-title {
   font-size: 53px;
   letter-spacing: 2px;
   padding: 10px 0;
@@ -1073,7 +1087,8 @@ textarea {
 }
 
 .aboutUs-tagline,
-.services-tagline {
+.services-tagline,
+.sectors-tagline {
   font-size: 23px;
   color: white;
   letter-spacing: 5px;
@@ -1292,7 +1307,296 @@ textarea {
   font-family: poppin-light;
 }
 
-/* our services section end */
+/* our sectors section */
+#ourSectors-home-section {
+  color: white;
+  width: 100%;
+  height: 400px;
+  background: rgba(2, 11, 42, 0.267) url("../images/our-sectors-group.png") center no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.text-area-sectors {
+  margin-bottom: 50px;
+  z-index: 3;
+}
+
+.our-sector-cards-round {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.sectors-card-items {
+  width: 320px;
+  height: 100px;
+  background: #ffe6af;
+  -webkit-box-shadow: 3px 4px 30px -3px rgba(0, 0, 0, 0.192);
+          box-shadow: 3px 4px 30px -3px rgba(0, 0, 0, 0.192);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: poppin-light;
+  margin: 10px 5px;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.sectors-card-items img {
+  width: 50px;
+}
+
+.sectors-card-items p {
+  font-size: 17px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: pre-line;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+
+.why-fail-section-grid-map {
+  width: 100%;
+  height: auto;
+  background: url("../images/top-bar-map.png"), url("../images/bottom-bar-map.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 80% 40%, 80% 30%;
+  background-position: center 20%, 115px 450px;
+}
+
+.why-fail-section-grid-map .col-12 {
+  margin: 40px 0;
+}
+
+.head-card-A {
+  width: 300px;
+  height: 120px;
+  background: white;
+  -webkit-box-shadow: 3px 4px 30px -7px rgba(0, 0, 0, 0.267);
+          box-shadow: 3px 4px 30px -7px rgba(0, 0, 0, 0.267);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: poppin-regular;
+  font-size: 16px;
+}
+
+.why-fail-section-grid-map span,
+.cardNos {
+  color: #eeb436;
+  font-size: 38px;
+  text-align: center;
+}
+
+.why-fail-section-grid-map .cardNos {
+  font-family: oswald regular;
+  letter-spacing: 2px;
+  font-size: 35px;
+}
+
+.sectors-cards {
+  width: 150px;
+  height: 180px;
+  padding: 5px;
+  background: white;
+  -webkit-box-shadow: 3px 4px 30px -3px rgba(0, 0, 0, 0.192);
+          box-shadow: 3px 4px 30px -3px rgba(0, 0, 0, 0.192);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  position: relative;
+  z-index: 11;
+}
+
+.sectors-cards p {
+  padding: 0;
+  text-align: center;
+  font-family: poppin-regular;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.top-bar-left {
+  position: relative;
+}
+
+.top-bar-right {
+  position: relative;
+}
+
+/* our director  */
+#director-home-section {
+  height: 400px;
+  background: #081b3c70 url("../images/directorhome.png") center no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#director-home-section .text-area-director {
+  margin-bottom: 40px;
+}
+
+.left-tilt-section p {
+  color: #eeb436;
+  font-family: poppin-medium;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 150%;
+  padding: 5px;
+  text-align: left;
+}
+
+.first-para,
+.last-para {
+  position: relative;
+}
+
+.first-para::before {
+  content: "''";
+  font-size: 50px;
+  font-family: "Gentium Book Basic", serif;
+  position: absolute;
+  left: -30px;
+}
+
+.last-para::after {
+  content: "''";
+  font-size: 50px;
+  font-family: "Gentium Book Basic", serif;
+  position: absolute;
+  bottom: 0;
+  right: -200px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/* team  */
+#team-home-section {
+  width: 100%;
+  height: 400px;
+  background: #081b3c3f url("../images/Mask Group 1.png") center no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#team-home-section .text-area-team {
+  margin-bottom: 40px;
+}
+
+.team-rows {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.team-rows .row-1 {
+  margin-bottom: 150px;
+}
+
+.team-rows #tilt-img .img-container-team {
+  width: 110%;
+  height: 450px;
+  background: #ffe6af;
+  border: 6px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.team-rows #tilt-img img {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 100%;
+}
+
+.team-rows #tilt-img::after {
+  height: 450px;
+}
+
+.about-team {
+  width: 50%;
+  margin-left: 55px;
+}
+
+.about-team h4 {
+  font-size: 19px;
+  font-family: poppin-light;
+  letter-spacing: 1px;
+}
+
+.about-team span {
+  font-family: poppin-semi-bold;
+}
+
+.about-team p {
+  font-family: poppin-light;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
 @media only screen and (max-width: 768px) {
   .expand {
     opacity: 1;
