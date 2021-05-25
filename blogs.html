@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>our team</title>
+   <title>blogs</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -14,13 +14,12 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous" />
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="stylesheet" href="./aos/aos.css">
    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body class="spot-bg-clr">
+
    <!-- header  -->
    <header>
       <div class="navigation ">
@@ -29,7 +28,7 @@
                <a href="/">HOME</a>
             </li>
             <li class="">
-               <a class=" active" aria-current="page" href="about.html" id="about">ABOUT</a>
+               <a href="about.html" id="about">ABOUT</a>
             </li>
             <li class="">
                <a class="" href="service.html">SERVICES</a>
@@ -41,7 +40,7 @@
                <a class="" href="#">PROJECTS</a>
             </li>
             <li class="">
-               <a class="" href="#">BLOGS</a>
+               <a class="active" aria-current="page" href="#">BLOGS</a>
             </li>
             <li class="">
                <a class="" href="#">CONTACT</a>
@@ -62,19 +61,19 @@
                      <a class="nav-link " href="/">HOME</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="#" id="about">ABOUT</a>
+                     <a class="nav-link" href="#" id="about">ABOUT</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#">SERVICES</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">SECTORS</a>
+                     <a class="nav-link " href="#">SECTORS</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#">PROJECTS</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">BLOGS</a>
+                     <a class="nav-link active" aria-current="page" href="#">BLOGS</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#">CONTACT</a>
@@ -86,161 +85,150 @@
       </nav>
    </header>
 
-   <div id="team-home-section">
-      <div class="text-area-team text-uppercase">
-         <h1 class="about-home-title os-regular text-white">OUR<span class="spot-clr"> TEAM</span></h1>
-         <p class="os-light aboutUs-tagline">The WArriors of <span class="spot-clr os-bold">Magi-A </span></p>
+   <!-- blogs section home  -->
+   <div id="blogs-home-section">
+      <!-- overlay rectangle  -->
+      <img src="./images/Path 546.png" alt="" class="overlay-blue">
+      <!-- overlay rectangle  -->
+      <div class="text-area-blogs text-uppercase">
+         <h1 class="blogs-home-title os-regular text-white p-3">OUR <span class="spot-clr">BLOG</span></h1>
+         <p class="os-light sectors-tagline">WHAT <span class="spot-clr os-bold">MAGI-A</span> SPEAKS</p>
       </div>
    </div>
 
-   <!-- section  -->
-   <div class="heading-who-we-are text-center ">
-      <h1 class="side-flags-dark os-light wwd-h about-h-tags my-5 " style="letter-spacing: 3px; padding: 15px 50px;">
-         OUR TEAM <span class="spot-clr os-bold text-shadow">THE TRUE MAGICIANS OF OUR FIRM</span></h1>
-   </div>
+   <!-- blogs post section  -->
 
-   <!-- team rows  -->
-   <div class="team-rows mt-5">
+   <div class="blog-posts-container ">
 
-      <div class="row-1 d-flex justify-content-evenly">
+      <div class="blog-post">
+         <h4 class="blog-post-topic">
+            Why do most companies fail to meet the
+            projected profits?
+         </h4>
+         <ul class="profile-list">
+            <li class="profile">
+               <img src="./images/icons/Ellipse 116.png" alt="." class="blog-post-profile">
+               <span class="profile-name">Aniket Roy</span>
+            </li>
+            <li class="date"><img src="./images/icons/Icon ionic-ios-time.png" alt=""> April 29, 2020</li>
+            <li class="like"><img src="./images/icons/Icon ionic-ios-heart.png" alt=""> 1.2M</li>
+            <li class="comment"><img src="./images/icons/Icon material-mode-comment.png" alt=""> 55K</li>
+            <li class="share"><img src="./images/icons/Icon awesome-share-alt.png" alt=""></li>
+         </ul>
 
-         <div id="tilt-img" class=" mt-5">
-            <div class="img-container-team">
-               <img src="images/Group 26.png" alt="">
-            </div>
-
+         <div class="blog-post-feature-img-box">
+            <img src="./images/blogpost1img.png" alt="">
          </div>
 
-         <div class="about-team">
-            <h4> <span>Bir Singh khati -</span>
-               Director Head Operations & Management
-            </h4>
-            <br>
-            <p>With an experience of over 20 years in hospitality and management, Mr. Bir is
-               an exceptional employee. He started his career as a trainee and through
-               years of hard work, now find himself as the esteemed head of operations and
-               management at Magi-a.</p>
-
-            <p>Being a trainee himself at a time, he holds a great PR with the staff and has a
-               gift of hiring and training the best staff. His experience with various fine
-               dining restaurants like, Moti Mahal, Bercos, etc., make him a great asset to
-               Magi-a. He also worked at the corporate manager of Yellow chillies.</p>
-
-            <p>And now he is working his magic in Magi-a.</p>
+         <div class="blog-post-para">
+            <p>
+               With over 20 years of experience on our hands, we know that if management & Operations are not executed
+               well, the outlet will never commence profits ad take out a ROI of an investor. It is a common mistake
+               that
+               new restaurant owners make and with Magi-a you can just sit back and relax while we take care of it for a
+               certain time, so things streamline.
+            </p>
+            <p>
+               We make sure that our clients maximise their profits while minimizing the initial expenses.
+            </p>
          </div>
+
       </div>
-      <div class="row-1 d-flex justify-content-evenly">
+      <div class="blog-post">
+         <h4 class="blog-post-topic">
+            How will the pandemic effect the restaurant
+            business?
+         </h4>
+         <ul class="profile-list">
+            <li class="profile">
+               <img src="./images/icons/Ellipse 119.png" alt="." class="blog-post-profile">
+               <span class="profile-name">Kusham Rai</span>
+            </li>
+            <li class="date"><img src="./images/icons/Icon ionic-ios-time.png" alt=""> April 29, 2020</li>
+            <li class="like"><img src="./images/icons/Icon ionic-ios-heart.png" alt=""> 1.2M</li>
+            <li class="comment"><img src="./images/icons/Icon material-mode-comment.png" alt=""> 55K</li>
+            <li class="share"><img src="./images/icons/Icon awesome-share-alt.png" alt=""></li>
+         </ul>
 
-         <div id="tilt-img" class=" mt-5">
-            <div class="img-container-team">
-               <img src="images/Group 9.png" alt="">
-            </div>
-
+         <div class="blog-post-feature-img-box">
+            <img src="./images/blogpost2img.png" alt="">
          </div>
 
-         <div class="about-team">
-            <h4> <span>Anuj -</span>
-               Master Chef
-            </h4>
-            <br>
-            <p>What is a restaurant without good food?</p>
+         <div class="blog-post-para">
+            <p>
+               It is no doubt, that the pandemic has changed our lives forever. The good that came out od this situation
+               is that we as humans have started to value the simpler things in life. When we were trapped inside for
+               months, even introverts who hate socialising wished to see their friends and family.
 
-            <p>Chef Anuj has an experience of more than 13 years under his belt. His passion
-               for food sets him apart. His love for food is the sole ingredient in making the
-               amazing, magical dishes that we provide our clients with.
             </p>
 
-            <p>With an expertise in rich, world cuisines, he is adventurous and always
-               inventing new dishes with deep research.</p>
+            <p class="pop-semi-bold">What does this spell for the restaurant?</p>
+
+            <p>
+               The first thing I want to do when this end is taking my family to a nice outdoor restaurant and enjoy a
+               meal and talk about everything that is and was. We can guarantee that is the case with many people,
+               probably all of them.
+            </p>
+            <p>
+               This time is crucial for a restaurant owner to revamp his business or start a new one keeping in mind the
+               emotional turmoil the past year has given our customers. Imagine your restaurant is the first one they
+               walk into after the pandemic and the atmosphere is so welcoming that you will have a new customer for
+               life.
+            </p>
+            <p>
+               This pandemic has affected everyone, but instead of dwelling on what has been lost, let us look forward
+               towards what the future holds for us.
+            </p>
+            <p>
+               This is the time to make some smart changes in your restaurant: -
+            </p>
+
+            <p>
+               <span class="pop-semi-bold">Hygiene is THE priority: -</span>
+               These days people are interested to know how many precautions you are taking to ensure your customers
+               safety. Right from the preparation of the food to the exit, make new guidelines for your restaurant to go
+               with the current situation.
+            </p>
+            <p>
+               <span class="pop-semi-bold">Smart Conversions: -</span> Build engagement programs to increase consumer
+               trust and convert your bar into restaurant based-bar.
+            </p>
+            <p><span class="pop-semi-bold">Revamped menu: -</span> Welcome the new era with a new and exciting menu that
+               will make your customers excited to get back into the dining experience.
+            </p>
+            <p><span class="pop-semi-bold">A makeover: -</span> A new look never does harm. Strat right from the
+               entrance canopy, to the interior designing. Spruce things up and leave your customers in awe.
+            </p>
+
+
+
          </div>
+
       </div>
-      <div class="row-1 d-flex justify-content-evenly">
-
-         <div id="tilt-img" class=" mt-5">
-            <div class="img-container-team">
-               <img src="images/Group 680.png" alt="">
-            </div>
-
-         </div>
-
-         <div class="about-team">
-            <h4> <span>Sushant Kapoor -</span>
-               Sous Chef, Project Auditor, PR
-            </h4>
-            <br>
-            <p>One of our youngest employees, but do not mistake his age for his
-               experience. Mr. Sushant has been a pioneer in the food industry from the very
-               start. He pursued his BA(hons) in Culinary Arts from University of Huddersfield,
-               UK (at) IHM Aurangabad with great public relations, gastronomy and the art
-               of developing and implementing menus.</p>
-
-            <p>He also has a keen interest in innovating and conceptualising new ideas.</p>
-
-
-         </div>
-      </div>
-      <div class="row-1 d-flex justify-content-evenly">
-
-         <div id="tilt-img" class=" mt-5">
-            <div class="img-container-team">
-               <img src="images/Group 679.png" alt="">
-            </div>
-
-         </div>
-
-         <div class="about-team">
-            <h4> <span>Davender Kumar -</span>
-               Architect & Concept Creation
-            </h4>
-            <br>
-            <p>If a restaurant has good food and a bad environment, it spoils the food. Mr.
-               Davender from Magi-a has a 15-year experience into designing and concept
-               creation.</p>
-
-            <p>He has designed a number of cafes, restaurants, puns and retail stores. With
-               this experience he has an exceptional skill of bringing his client’s dream to
-               life.</p>
-
-            <p>He is very particular about the needs of the client and always delivers on
-               time.</p>
-         </div>
-      </div>
-      <div class="row-1 d-flex justify-content-evenly">
-
-         <div id="tilt-img" class=" mt-5">
-            <div class="img-container-team">
-               <img src="images/Group 59.png" alt="">
-            </div>
-
-         </div>
-
-         <div class="about-team">
-            <h4> <span>Neha Nurse -</span>
-               HR & Staff Training
-            </h4>
-            <br>
-            <p>Ms. Neha completed her education from IHM Bombay, and has great skills in
-               terms of staff hiring and training. She trains the staff with both, the basics of
-               hospitality industry and then according to the client’s requirements. She
-               ensures that the reaches the restaurant and is being trained as per the
-               client.</p>
-
-            <p>Ms. Neha’s quick thinking a response time helps us to hire the right staff to
-               suit a restaurant’s concept. .</p>
-
-         </div>
-      </div>
-
-
 
 
 
    </div>
 
+   <!-- recent post section aside  -->
+
+   <div class="recent-post-div ">
+
+      <h3 class="pop-semi-bold recent-heading fs-5">Recent Topics</h3>
+      <ul class="recent-post-list-link">
+         <li><a href="">Why do most companies fail to meet the projected profits</a></li>
+         <li><a href="">How will the pandemic effect the restaurant business</a></li>
+         <li><a href="">Why do most companies fail to meet the projected profits</a></li>
+         <li><a href="">How will the pandemic effect the restaurant business</a></li>
+         <li><a href="">Why do most companies fail to meet the projected profits</a></li>
+         <li><a href="">How will the pandemic effect the restaurant business</a></li>
+      </ul>
+
+   </div>
 
 
    <!-- footer  -->
-   <div class="container-fluid mx-auto m-0 w-100 h-100 footer-bg d-flex flex-column justify-content-center  ">
+   <div class="container-fluid mx-auto w-100 h-100 footer-bg d-flex flex-column justify-content-center  ">
       <!-- footer main container -->
 
 
@@ -281,7 +269,7 @@
             </form>
          </div>
 
-         <div class="address col-12 col-md-5">
+         <div class="address col-12 col-md-5 p-2">
 
             <div class="col-auto row d-flex flex-column justify-content-between align-items-center text-center">
                <!-- logo -->
@@ -300,7 +288,7 @@
                <!-- share follow -->
                <div class=" text-white social-icons">
                   <h3 class="mb-5 os-light d-none d-md-block">FOLLOW US</h3>
-                  <div class="icons d-flex justify-content-center">
+                  <div class="icons d-flex justify-content-center align-items-center">
                      <a href="" class="fb"><i class="fab fa-facebook-f"></i></a>
                      <a href="" class="tw"><i class="fab fa-twitter"></i></a>
                      <a href="" class="li"><i class="fab fa-linkedin-in"></i></a>
@@ -331,8 +319,7 @@
    </div>
 
 
-
-   <!-- script  -->
+   <!-- scripts   -->
    <script src="./aos/aos.js"></script>
    <script src=" ./js/index.js"></script>
    <script>
