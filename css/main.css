@@ -2033,7 +2033,7 @@ address {
 
 .empty-container {
   width: 43%;
-  height: 300px;
+  height: 40%;
 }
 
 .project-gallery-card-top,
@@ -2664,6 +2664,16 @@ address {
   /* projects  */
   #projects-home-section {
     height: 300px;
+  }
+  .nos-div h1 {
+    font-size: 17px;
+  }
+  .nos-div h3 {
+    font-size: 12px !important;
+  }
+  .project-gallery-card-below,
+  .empty-container {
+    margin: 80px 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
