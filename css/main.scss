@@ -1552,11 +1552,14 @@ address {
   top: -35px;
   left: 50%;
 }
+.empty-container {
+  width: 43%;
+  height: 300px;
+}
 .project-gallery-card-top,
 .project-gallery-card-below {
   width: 43%;
-  min-height: 40%;
-  height: 300px;
+  height: 40%;
   position: relative;
   .nos-div {
     width: 50%;
@@ -1598,7 +1601,8 @@ address {
   right: -8%;
   z-index: -11;
 }
-.project-gallery-card-below {
+.project-gallery-card-below,
+.empty-container {
   margin: 100px 0;
 }
 .project-gallery-card-below::before {

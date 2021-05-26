@@ -1991,7 +1991,6 @@ address {
 }
 
 .project-container {
-  width: 75%;
   margin: 40px auto 80px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -2032,11 +2031,15 @@ address {
   left: 50%;
 }
 
+.empty-container {
+  width: 43%;
+  height: 300px;
+}
+
 .project-gallery-card-top,
 .project-gallery-card-below {
   width: 43%;
-  min-height: 40%;
-  height: 300px;
+  height: 40%;
   position: relative;
 }
 
@@ -2102,7 +2105,8 @@ address {
   z-index: -11;
 }
 
-.project-gallery-card-below {
+.project-gallery-card-below,
+.empty-container {
   margin: 100px 0;
 }
 
