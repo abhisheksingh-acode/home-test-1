@@ -12,16 +12,9 @@ const swiperMain = new Swiper(".swiperMain", {
   direction: "vertical",
   mousewheel: true,
   speed: 1500,
+  cssMode: false,
   spaceBetween: 0,
-  //  effect: "slide",
-  //  coverflowEffect: {
-  //   rotate: 50,
-  //   stretch: 0,
-  //   depth: 100,
-  //   modifier: 1,
-  //   slideShadows: true
-  // },
-  loop: true,
+  loop: false,
   keyboard: {
     enabled: true,
   },
@@ -49,6 +42,11 @@ const homeSlider = new Swiper(".homeSlider", {
   direction: "horizontal",
   slidesPerView: 1,
   spaceBetween: 30,
+  speed: 1500,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
   centeredSlides: true,
   loop: true,
   keyboard: {
@@ -80,6 +78,11 @@ const swiper2 = new Swiper(".swiper2", {
   spaceBetween: 30,
   centeredSlides: true,
   loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
   keyboard: {
     enabled: true,
   },
@@ -124,6 +127,11 @@ const mySwiper = new Swiper(".mySwiper", {
   direction: "horizontal",
   slidesPerView: 1,
   spaceBetween: 30,
+  speed: 1000,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
   loop: true,
 
   // If we need pagination
@@ -216,7 +224,7 @@ document.body.addEventListener("mousemove", (e) => {
   card.style.transform = `translate(-${(clX * 3) / 100}px , -${
     (clY * 3) / 100
   }px)`;
-  footer.style.backgroundPosition = `${(clX * 3) / 100}px , ${
-    (clY * 7) / 100
+  footer.style.backgroundPosition = `-${(clX * 2) / 100}px , -${
+    (clY * 3) / 100
   }px`;
 });

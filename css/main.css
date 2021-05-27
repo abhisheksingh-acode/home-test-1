@@ -235,24 +235,26 @@ body {
 }
 
 #home-carousel-1 {
-  background-image: url("../images/homeBg.svg");
+  background-image: url("../images/home-1.jpg");
+  background-size: cover;
+  background-position: top center;
 }
 
 #home-carousel-2 {
   background-image: url("../images/home-2.png");
+  background-size: 100% 110%;
 }
 
 #home-carousel-3 {
   background-image: url("../images/home-3.png");
+  background-size: 100% 110%;
 }
 
 #home-carousel-1,
 #home-carousel-2,
 #home-carousel-3 {
-  background-color: #03091d56;
-  background-size: cover;
+  background-color: #03091d63;
   background-repeat: no-repeat;
-  background-position: center;
   background-blend-mode: multiply;
 }
 
@@ -262,8 +264,12 @@ body {
 
 #start-yours-home {
   letter-spacing: 6px;
-  font-size: 20px;
+  font-size: 18px;
   padding: 0;
+}
+
+.home-tagline {
+  font-size: 20px;
 }
 
 .home-heading {
@@ -421,6 +427,15 @@ body {
   padding-top: 26px;
 }
 
+.title-our-service h6 {
+  letter-spacing: 8px;
+}
+
+.title-our-service h1 {
+  font-size: 51px;
+  letter-spacing: 3px;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -456,13 +471,13 @@ body {
 
 .swiper2 .swiper-slide::before {
   content: url("");
-  width: 200px;
+  width: 170px;
   height: 200px;
   border: 1px solid #f6f6f8;
   position: absolute;
   z-index: 1;
-  bottom: 105%;
-  right: 55%;
+  bottom: 106%;
+  right: 60%;
   -webkit-transform: translate(55%, 105%);
           transform: translate(55%, 105%);
   border-top-left-radius: 20px;
@@ -471,13 +486,13 @@ body {
 
 .swiper2 .swiper-slide::after {
   content: url("");
-  width: 200px;
+  width: 170px;
   height: 200px;
   border: 1px solid #f6f6f8;
   position: absolute;
   z-index: 1;
-  top: 110%;
-  left: 55%;
+  top: 109%;
+  left: 60%;
   -webkit-transform: translate(-55%, -110%);
           transform: translate(-55%, -110%);
   border-top-left-radius: 20px;
@@ -520,7 +535,7 @@ body {
 }
 
 #our-service {
-  background-image: url("../images/ourservicehome.png");
+  background-image: url("../images/plateBg.png");
   background-blend-mode: multiply;
   background-size: contain;
   background-position: center 150px;
@@ -640,10 +655,7 @@ body {
 }
 
 #quoteBg {
-  /* background-color: rgba(0, 0, 0, 0.24); */
-  background-image: url("../images/quotebg.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../images/quotebg.png") center no-repeat;
   background-size: 100% 100%;
   background-blend-mode: multiply;
   -webkit-transition: all ease;
@@ -657,7 +669,7 @@ body {
     background-size: 100% 100%;
   }
   100% {
-    background-size: 120% 120%;
+    background-size: 115% 115%;
   }
 }
 
@@ -666,7 +678,7 @@ body {
     background-size: 100% 100%;
   }
   100% {
-    background-size: 120% 120%;
+    background-size: 115% 115%;
   }
 }
 
@@ -980,17 +992,26 @@ textarea {
 
 /* form styling ends */
 .icons a {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 50px;
+  height: 50px;
   border: 1px solid white;
   border-radius: 50%;
+  padding: 10px;
   text-decoration: none;
   text-align: center;
   color: white;
   margin: 0 6px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .icons a:first-child:hover {
@@ -1149,6 +1170,10 @@ textarea {
 }
 
 /* our services section  */
+#ourServices-home-section {
+  background: url("../images/ourservicehome.png") center no-repeat;
+}
+
 #ourServices-home-section,
 #contact-home-section,
 #projects-home-section {
@@ -1168,16 +1193,13 @@ textarea {
   z-index: 1;
 }
 
-#ourService-home-section {
-  background: url("../images/ourservicehome.png") center no-repeat;
-}
-
 .grid-rows {
   width: 80%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 80px auto;
+  overflow: hidden;
 }
 
 .grid-rows .row .card-white-grid {
@@ -1275,31 +1297,52 @@ textarea {
   padding: 0 20px;
 }
 
+.second-section-service h1 {
+  font-size: 27px;
+}
+
+.second-section-service .service-second-section-title .side-flags-dark::before {
+  width: 60px;
+  left: -7%;
+}
+
+.second-section-service .service-second-section-title .side-flags-dark::after {
+  width: 60px;
+  right: -6%;
+}
+
 .service-second-section-para {
   margin: 60px auto;
   width: 100%;
+  font-size: 13.5px;
+  letter-spacing: 1px;
   text-align: justify;
 }
 
 .how-do-we-help-title {
   letter-spacing: 10px;
-  font-size: 24px;
+  font-size: 21px;
   text-shadow: 0 1px 1px #020b2a3a;
+  margin: 20px 0 0;
 }
 
 .cards-for-help {
-  margin: 100px auto 100px;
+  margin: 50px auto 100px;
 }
 
 .help-cards {
   width: 200px;
   height: 221px;
   background: white;
-  -webkit-box-shadow: 0 2px 11px -5px rgba(0, 0, 0, 0.322);
-          box-shadow: 0 2px 11px -5px rgba(0, 0, 0, 0.322);
+  -webkit-box-shadow: 1px 3px 31px -5px rgba(0, 0, 0, 0.322);
+          box-shadow: 1px 3px 31px -5px rgba(0, 0, 0, 0.322);
   overflow: hidden;
   padding: 10px 10px 20px;
-  margin: 10px 10px;
+  margin: 20px 10px;
+}
+
+.help-cards .cardNos {
+  font-size: 38px;
 }
 
 .help-cards h1 {
@@ -1572,6 +1615,7 @@ textarea {
 .team-rows {
   width: 90%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .team-rows .row-1 {
@@ -1642,24 +1686,46 @@ textarea {
 }
 
 #what-sets-home-section .text-area-team {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
+}
+
+#what-sets-home-section .what-sets-home-title {
+  font-size: 53px;
+}
+
+#what-sets-home-section .aboutUs-tagline {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.heading-what-sets-magia .side-flags-dark::before {
+  width: 50px;
+  height: 6px;
+  left: -6%;
+}
+
+.heading-what-sets-magia .side-flags-dark::after {
+  width: 50px;
+  right: -5%;
+  height: 6px;
 }
 
 .outer-inner-bar-div {
   width: 80%;
-  height: 180px;
+  height: 170px;
   min-width: 300px;
   background: white;
   -webkit-box-shadow: 3px -2px 30px -6px #0000004b;
           box-shadow: 3px -2px 30px -6px #0000004b;
   border-radius: 3px;
   margin: 50px auto;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-family: poppin-regular;
   font-size: 13px;
   -webkit-box-align: center;
@@ -1685,15 +1751,21 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   font-family: oswald regular;
+  border-radius: 3px;
   top: 0;
   left: -7px;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
+.outer-inner-bar-div .inner-nos h1 {
+  font-size: 38px;
+}
+
 .outer-inner-bar-div p {
-  width: 70%;
-  margin-left: 50px;
+  width: 81%;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
 /* blogs section styling  */
