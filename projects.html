@@ -21,12 +21,14 @@
 </head>
 
 <body class="spot-bg-clr">
+   <!-- social-bar-fixed  -->
+   <div class="social-fixed"></div>
    <!-- header  -->
    <header>
       <div class="navigation ">
          <ul class="">
             <li class="">
-               <a href="/">HOME</a>
+               <a href="index.html">HOME</a>
             </li>
             <li class="">
                <a href="about.html" id="about">ABOUT</a>
@@ -35,16 +37,16 @@
                <a class="" href="service.html">SERVICES</a>
             </li>
             <li class="">
-               <a class="" href="#">SECTORS</a>
+               <a class="" href="sectors.html">SECTORS</a>
             </li>
             <li class="">
-               <a class="active" aria-current="page" href="#">PROJECTS</a>
+               <a class="active" aria-current="page" href="projects.html">PROJECTS</a>
             </li>
             <li class="">
-               <a href="#">BLOGS</a>
+               <a href="blogs.html">BLOGS</a>
             </li>
             <li class="">
-               <a class="" href="#">CONTACT</a>
+               <a class="" href="contactUs.html">CONTACT</a>
             </li>
          </ul>
       </div>
@@ -59,25 +61,25 @@
             <div class="collapse d-md-block" id="navbarSupportedContent">
                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                     <a class="nav-link " href="/">HOME</a>
+                     <a class="nav-link " href="index.html">HOME</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#" id="about">ABOUT</a>
+                     <a class="nav-link" href="about.html" id="about">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">SERVICES</a>
+                     <a class="nav-link" href="service.html">SERVICES</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link " href="#">SECTORS</a>
+                     <a class="nav-link " href="sectors.html">SECTORS</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="#">PROJECTS</a>
+                     <a class="nav-link active" aria-current="page" href="projects.html">PROJECTS</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">BLOGS</a>
+                     <a class="nav-link" href="blogs.html">BLOGS</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">CONTACT</a>
+                     <a class="nav-link" href="contactUs.html">CONTACT</a>
                   </li>
 
                </ul>
@@ -690,6 +692,95 @@
          </div>
 
       </div>
+   </div>
+
+   <!-- footer  -->
+
+   <div class="container-fluid mx-auto w-100 h-100 footer-bg d-flex flex-column justify-content-center  ">
+      <!-- footer main container -->
+
+
+      <div
+         class="upperfooter row w-100 d-flex justify-content-center justify-content-md-around align-items-center mx-auto py-3">
+
+         <div class="form-container col-12 col-md-4 mx-auto d-flex flex-column justify-content-center">
+            <h5 class="text-uppercase text-center os-regular">reach out to us</h5>
+
+            <form action="" method="get" class="form-footer col-3">
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="name">Name</label>
+                  </div>
+                  <input type="text" required placeholder="Enter Your Name" name="name">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="email">Email</label>
+                  </div>
+                  <input type="email" required placeholder="Enter Your Email" name="email">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="phone">Phone</label>
+                  </div>
+                  <input type="number" required placeholder="Enter Your Phone" name="phone">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="message">Message</label>
+                  </div>
+                  <input type="text" required placeholder="Write Your Message" name="message" />
+               </div>
+               <div class="form-input-control mt-3 px-4"></div>
+               <button class="btn btn-dark os-light rounded-pill d-block mx-auto py-1" style="letter-spacing: 3px;"
+                  type="submit">SUBMIT</button>
+            </form>
+         </div>
+
+         <div class="address col-12 col-md-5">
+
+            <div class="col-auto row d-flex flex-column justify-content-between align-items-center text-center">
+               <!-- logo -->
+               <div class="d-none d-md-block">
+                  <img src="images/magiLogo.svg" alt="logo" width="200px" height="100px">
+               </div>
+               <!-- address -->
+               <div class=" text-white d-none d-md-block">
+                  <h4 class="company-heading m-0 p-0 el-bold">MAGIA HOSPITALITY & CONSULTANCY</h4>
+                  <address class="text-center pop-x-light">
+                     Building No. XX New Delhi 11000X <br>
+                     Email: info@magia.com <br>
+                     Phone: +91 XXXXXXXXXX
+                  </address>
+               </div>
+               <!-- share follow -->
+               <div class=" text-white social-icons">
+                  <h3 class="mb-5 os-light d-none d-md-block">FOLLOW US</h3>
+                  <div class="icons d-flex justify-content-center align-items-center">
+                     <a href="" class="fb"><i class="fab fa-facebook-f"></i></a>
+                     <a href="" class="tw"><i class="fab fa-twitter"></i></a>
+                     <a href="" class="li"><i class="fab fa-linkedin-in"></i></a>
+                     <a href="" class="yt"><i class="fab fa-youtube"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="top-btn d-none d-lg-flex col-12 col-md-3 align-items-center justify-content-center ">
+            <!-- <a class="col-2 bg-none text-white d-flex align-items-end justify-content-end " href="#home"> -->
+            <i class="fas fa-arrow-up text-dark bg-warning px-3 py-3 rounded-circle"></i>
+            <!-- </a> -->
+         </div>
+      </div>
+
+      <ul
+         class="list-unstyled lowerFooter p-0 mx-auto container-fluid d-flex justify-content-between align-items-center">
+
+         <li class="footer-items grey-clr">All Rights Reserved <span class="text-uppercase text-white"> 2021
+               magia.com</span></li>
+
+         <li class="footer-items grey-clr">Designed By <span class="text-uppercase text-white">Awarno.com</span></li>
+      </ul>
    </div>
 
    <!-- script  -->

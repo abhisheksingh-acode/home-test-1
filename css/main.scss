@@ -119,6 +119,44 @@ body {
   height: 100vh;
   width: 100vw;
 }
+.sticky-social {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  padding: 0px;
+  margin: 0px;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  .social {
+    list-style: none;
+  }
+  .social li {
+    padding: 10px 10px;
+    font-size: 22px;
+    transition: all 0.8s ease-in-out;
+  }
+  .social li:hover {
+    margin-right: -30px;
+    box-shadow: 2px 5px 10px grey;
+  }
+  .social li:hover .fab {
+    margin-left: 20px;
+  }
+  .fab {
+    color: #fff;
+    transition: all 0.8s ease-in-out;
+  }
+  .fb {
+    background-color: #3c5a98;
+  }
+  .twitter {
+    background-color: #1ea1f2;
+  }
+  .whatsapp {
+    background-color: #0eb950;
+  }
+}
+
 .navbar {
   font-family: oswald light;
   background-color: #03091d44;
@@ -1453,6 +1491,10 @@ textarea {
       font-size: 14px;
       letter-spacing: 1px;
       line-height: 160%;
+      p {
+        white-space: pre-line;
+        margin: 5px 0;
+      }
     }
   }
 }
@@ -1469,8 +1511,10 @@ textarea {
         text-decoration: none;
         color: #eeb436;
         font-family: poppin-medium;
-        font-size: 14px;
+        font-size: 13px;
         position: relative;
+        white-space: pre-line;
+        letter-spacing: 1px;
       }
       a::before {
         content: ".";
@@ -1488,9 +1532,16 @@ textarea {
 /* contact us section  */
 
 #contact-home-section {
-  background: #0508154b url("../images/contacthome.png") center no-repeat;
+  background: #0508154b url("../images/contacthome.png") no-repeat;
   background-size: cover;
+  background-position: bottom center;
   background-blend-mode: multiply;
+  .text-area-contact {
+    margin-bottom: 90px;
+  }
+  .sectors-tagline {
+    font-size: 22px;
+  }
 }
 .main-contact-section {
   height: fit-content;
@@ -1504,6 +1555,7 @@ address {
   height: fit-content;
   .contact-icon {
     margin-right: 30px;
+    margin-top: 5px;
   }
   .contact-row {
     width: 100%;
@@ -1527,7 +1579,7 @@ address {
   .google-map-container {
     width: 90%;
     height: 400px;
-    box-shadow: 1px 2px 12px -7px rgba(0, 0, 0, 0.329);
+    box-shadow: 1px 2px 32px -7px rgba(0, 0, 0, 0.329);
     background: white;
   }
 }
@@ -1535,7 +1587,7 @@ address {
   height: 100%;
   .form-container {
     box-shadow: 3px 4px 32px -7px rgba(0, 0, 0, 0.329);
-    margin-top: 60px;
+    margin-top: 43px;
     padding: 50px 10px;
     width: 600px;
     border-radius: 1px;
@@ -1550,13 +1602,19 @@ address {
         width: 90%;
         /* padding: 10px 0; */
       }
+      button {
+        background: #020b2a;
+      }
       label {
         padding: 20px 0;
       }
       .captcha-div {
         padding-top: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
       }
+    }
+    h5 {
+      letter-spacing: 3px;
     }
   }
   .form-container input::placeholder {
@@ -1580,6 +1638,8 @@ address {
   /* position: relative; */
 
   .project-location-name {
+    text-transform: uppercase;
+    letter-spacing: 2px;
     font-family: oswald light;
     font-size: 20px;
     width: 90%;
@@ -1589,11 +1649,11 @@ address {
   }
   .project-location-name::before {
     content: url("");
-    width: 93%;
+    width: 90%;
     height: 10px;
     border-top: 2px dashed #eeb436;
     position: absolute;
-    top: 50%;
+    top: 70%;
     right: 0;
   }
 }
@@ -1603,10 +1663,10 @@ address {
 .project-gallery::before {
   content: url("");
   width: 10px;
-  height: calc(100% - 20px);
+  height: calc(100% - 23px);
   border-left: 2px dashed #eeb436;
   position: absolute;
-  top: -35px;
+  top: -32px;
   left: 50%;
 }
 .empty-container {
@@ -1619,7 +1679,7 @@ address {
   height: 40%;
   position: relative;
   .nos-div {
-    width: 50%;
+    width: 40%;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -1634,7 +1694,7 @@ address {
       font-family: poppin-light;
     }
     h3 {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
   .nos-top {

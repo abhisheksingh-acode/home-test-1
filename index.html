@@ -27,9 +27,11 @@
 
   <title>Home magi-a</title>
 </head>
-</head>
 
 <body>
+  <!-- social-bar-fixed  -->
+  <div class="social-fixed"></div>
+
   <!-- header navbar -->
 
   <header>
@@ -62,7 +64,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0 px-0 ">
       <div class="container py-4">
-        <a class="navbar-brand " href="/"><img src="images/magiLogo.svg" alt="" width="200px"></a>
+        <a class="navbar-brand " href="/"><img src="images/magiLogo.svg" alt="" class="img-fluid" width="200px"></a>
         <button class="navbar-toggler" type="button" style="width: 100px;" onclick="expand()">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -109,7 +111,7 @@
 
           <div class="swiper-wrapper">
             <!-- slider starts  -->
-            <div class="swiper-slide ">
+            <div class="swiper-slide " id="#home">
               <div
                 class="container-fluid h-100 text-white p-0 mx-auto d-flex flex-column justify-content-center align-items-center "
                 id="home-carousel-1">
@@ -239,16 +241,16 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide ">
-                <img src="./images/slide-1.png" class="slide-img-box" alt="">
+                <img src="./images/slide-1.png" class="slide-img-box" alt="" class="img-fluid">
               </div>
               <div class="swiper-slide ">
-                <img src="./images/slide-2.png" class="slide-img-box" alt="">
+                <img src="./images/slide-2.png" class="slide-img-box" alt="" class="img-fluid">
               </div>
               <div class="swiper-slide ">
-                <img src="./images/slide-3.png" class="slide-img-box" alt="">
+                <img src="./images/slide-3.png" class="slide-img-box" alt="" class="img-fluid">
               </div>
               <div class="swiper-slide ">
-                <img src="./images/slide-4.png" class="slide-img-box" alt="">
+                <img src="./images/slide-4.png" class="slide-img-box" alt="" class="img-fluid">
               </div>
 
             </div>
@@ -302,7 +304,7 @@
                     <li>Vendors Managment</li>
                   </ul>
                   <a href="#" class="text-dark text-uppercase pop-light">Read More <i><img
-                        src="./images/Icon feather-arrow-right.svg" alt=""></i></a>
+                        src="./images/Icon feather-arrow-right.svg" alt="" class="img-fluid"></i></a>
                 </div>
               </div>
               <div class="swiper-slide ">
@@ -315,7 +317,7 @@
                     <li>Software Creation</li>
                   </ul>
                   <a href="#" class="text-dark text-uppercase pop-light">Read More <i class=""><img
-                        src="./images/Icon feather-arrow-right.svg" alt=""></i></a>
+                        src="./images/Icon feather-arrow-right.svg" alt="" class="img-fluid"></i></a>
                 </div>
               </div>
               <div class="swiper-slide ">
@@ -328,7 +330,7 @@
                     <li>Financial Advisory</li>
                   </ul>
                   <a href="#" class="text-dark text-uppercase pop-light">Read More <i class=""><img
-                        src="./images/Icon feather-arrow-right.svg" alt=""></i></a>
+                        src="./images/Icon feather-arrow-right.svg" alt="" class="img-fluid"></i></a>
                 </div>
               </div>
 
@@ -378,7 +380,7 @@
             id="we-excel-in">
 
             <div id="tilt-img" class="d-none d-sm-block d-md-block">
-              <img src="images/tiltImg.svg" alt="">
+              <img src="images/tiltImg.svg" alt="" class="img-fluid">
             </div>
             <div class="ul-box d-flex">
               <ul class="pop-x-light">
@@ -422,7 +424,8 @@
                 <div class="swiper-slide">
 
                   <div class="cont text-center">
-                    <img src="images/lemon.png" class="slider-sd-img" alt="" width="200px" height="250px" /> <br /> <br>
+                    <img src="images/lemon.png" class="slider-sd-img" alt="" class="img-fluid" width="200px"
+                      height="250px" /> <br /> <br>
                     <span class="pop-light text-shadow"> <span class="pop-medium">Johnas -</span> Director, Blk </span>
                     <i class="fas fa-play play-center"></i>
                   </div>
@@ -430,7 +433,8 @@
                 <div class="swiper-slide">
 
                   <div class="cont text-center">
-                    <img src="images/test2.png" class="slider-sd-img" alt="" width="200px" height="250px" /> <br /> <br>
+                    <img src="images/test2.png" class="slider-sd-img" alt="" class="img-fluid" width="200px"
+                      height="250px" /> <br /> <br>
                     <span class="pop-light text-shadow"> <span class="pop-medium">Ankit -</span> Manager, Slo </span>
                     <i class="fas fa-play play-center"></i>
                   </div>
@@ -438,7 +442,8 @@
                 <div class="swiper-slide">
 
                   <div class="cont text-center">
-                    <img src="images/test3.png" class="slider-sd-img" alt="" width="200px" height="250px" /> <br /> <br>
+                    <img src="images/test3.png" class="slider-sd-img" alt="" class="img-fluid" width="200px"
+                      height="250px" /> <br /> <br>
                     <span class="pop-light text-shadow"> <span class="pop-medium">Deepak</span> Executive, Blk </span>
                     <i class="fas fa-play play-center"></i>
                   </div>
@@ -530,9 +535,9 @@
             </div>
 
             <div class="top-btn d-none d-lg-flex col-12 col-md-3 align-items-center justify-content-center ">
-              <a class="col-2 bg-none text-white d-flex align-items-end justify-content-end " href="#">
-                <i class="fas fa-arrow-up text-dark bg-warning px-3 py-3 rounded-circle"></i>
-              </a>
+              <!-- <a class="col-2 bg-none text-white d-flex align-items-end justify-content-end " href="#home"> -->
+              <i class="fas fa-arrow-up text-dark bg-warning px-3 py-3 rounded-circle"></i>
+              <!-- </a> -->
             </div>
           </div>
 
@@ -553,48 +558,6 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
   <script src="./swiper/swiper-bundle.min.js"></script>
   <!-- script  -->
   <script src=" ./js/index.js"></script>

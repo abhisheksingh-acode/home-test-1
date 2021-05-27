@@ -4,7 +4,18 @@ function expand() {
   navbar.classList.toggle("expand");
   bar.classList.toggle("show");
 }
+var element = document.querySelectorAll(".social-fixed");
+var code = `<div class="sticky-social">
+<ul class="social">
+<li class="fb"><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+<li class="twitter"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+<li class="whatsapp"><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+</ul>
+</div>`;
 
+element.forEach((e) => {
+  e.innerHTML = code;
+});
 //swiper initialize
 
 const swiperMain = new Swiper(".swiperMain", {
@@ -227,4 +238,11 @@ document.body.addEventListener("mousemove", (e) => {
   footer.style.backgroundPosition = `-${(clX * 2) / 100}px , -${
     (clY * 3) / 100
   }px`;
+});
+
+// get back to top function
+
+document.querySelector(".top-btn").addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 });

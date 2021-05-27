@@ -147,6 +147,56 @@ body {
   width: 100vw;
 }
 
+.sticky-social {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  padding: 0px;
+  margin: 0px;
+  z-index: 100;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.sticky-social .social {
+  list-style: none;
+}
+
+.sticky-social .social li {
+  padding: 10px 10px;
+  font-size: 22px;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.sticky-social .social li:hover {
+  margin-right: -30px;
+  -webkit-box-shadow: 2px 5px 10px grey;
+          box-shadow: 2px 5px 10px grey;
+}
+
+.sticky-social .social li:hover .fab {
+  margin-left: 20px;
+}
+
+.sticky-social .fab {
+  color: #fff;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.sticky-social .fb {
+  background-color: #3c5a98;
+}
+
+.sticky-social .twitter {
+  background-color: #1ea1f2;
+}
+
+.sticky-social .whatsapp {
+  background-color: #0eb950;
+}
+
 .navbar {
   font-family: oswald light;
   background-color: #03091d44;
@@ -1890,6 +1940,11 @@ textarea {
   line-height: 160%;
 }
 
+.blog-posts-container .blog-post .blog-post-para p {
+  white-space: pre-line;
+  margin: 5px 0;
+}
+
 .recent-post-div {
   float: left;
   margin-top: 80px;
@@ -1909,8 +1964,10 @@ textarea {
   text-decoration: none;
   color: #eeb436;
   font-family: poppin-medium;
-  font-size: 14px;
+  font-size: 13px;
   position: relative;
+  white-space: pre-line;
+  letter-spacing: 1px;
 }
 
 .recent-post-div .recent-post-list-link li a::before {
@@ -1926,9 +1983,18 @@ textarea {
 
 /* contact us section  */
 #contact-home-section {
-  background: #0508154b url("../images/contacthome.png") center no-repeat;
+  background: #0508154b url("../images/contacthome.png") no-repeat;
   background-size: cover;
+  background-position: bottom center;
   background-blend-mode: multiply;
+}
+
+#contact-home-section .text-area-contact {
+  margin-bottom: 90px;
+}
+
+#contact-home-section .sectors-tagline {
+  font-size: 22px;
 }
 
 .main-contact-section {
@@ -1951,6 +2017,7 @@ address {
 
 .left-contact-section .contact-icon {
   margin-right: 30px;
+  margin-top: 5px;
 }
 
 .left-contact-section .contact-row {
@@ -1984,8 +2051,8 @@ address {
 .left-contact-section .google-map-container {
   width: 90%;
   height: 400px;
-  -webkit-box-shadow: 1px 2px 12px -7px rgba(0, 0, 0, 0.329);
-          box-shadow: 1px 2px 12px -7px rgba(0, 0, 0, 0.329);
+  -webkit-box-shadow: 1px 2px 32px -7px rgba(0, 0, 0, 0.329);
+          box-shadow: 1px 2px 32px -7px rgba(0, 0, 0, 0.329);
   background: white;
 }
 
@@ -1996,7 +2063,7 @@ address {
 .right-contact-section .form-container {
   -webkit-box-shadow: 3px 4px 32px -7px rgba(0, 0, 0, 0.329);
           box-shadow: 3px 4px 32px -7px rgba(0, 0, 0, 0.329);
-  margin-top: 60px;
+  margin-top: 43px;
   padding: 50px 10px;
   width: 600px;
   border-radius: 1px;
@@ -2017,13 +2084,21 @@ address {
   /* padding: 10px 0; */
 }
 
+.right-contact-section .form-container form button {
+  background: #020b2a;
+}
+
 .right-contact-section .form-container form label {
   padding: 20px 0;
 }
 
 .right-contact-section .form-container form .captcha-div {
   padding-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+}
+
+.right-contact-section .form-container h5 {
+  letter-spacing: 3px;
 }
 
 .right-contact-section .form-container input::-webkit-input-placeholder {
@@ -2071,6 +2146,8 @@ address {
 }
 
 .project-container .project-location-name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-family: oswald light;
   font-size: 20px;
   width: 90%;
@@ -2081,11 +2158,11 @@ address {
 
 .project-container .project-location-name::before {
   content: url("");
-  width: 93%;
+  width: 90%;
   height: 10px;
   border-top: 2px dashed #eeb436;
   position: absolute;
-  top: 50%;
+  top: 70%;
   right: 0;
 }
 
@@ -2096,10 +2173,10 @@ address {
 .project-gallery::before {
   content: url("");
   width: 10px;
-  height: calc(100% - 20px);
+  height: calc(100% - 23px);
   border-left: 2px dashed #eeb436;
   position: absolute;
-  top: -35px;
+  top: -32px;
   left: 50%;
 }
 
@@ -2117,7 +2194,7 @@ address {
 
 .project-gallery-card-top .nos-div,
 .project-gallery-card-below .nos-div {
-  width: 50%;
+  width: 40%;
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2148,7 +2225,7 @@ address {
 
 .project-gallery-card-top .nos-div h3,
 .project-gallery-card-below .nos-div h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .project-gallery-card-top .nos-top,
