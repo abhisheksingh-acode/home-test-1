@@ -1484,10 +1484,23 @@ textarea {
 .why-fail-section-grid-map {
   width: 100%;
   height: auto;
-  background: url("../images/top-bar-map.png"), url("../images/bottom-bar-map.png");
+  /* background: url("../images/top-bar-map.png"),
+    url("../images/bottom-bar-map.png"); */
   background-repeat: no-repeat, no-repeat;
   background-size: 80% 40%, 80% 30%;
   background-position: center 20%, 115px 450px;
+  position: relative;
+}
+
+.why-fail-section-grid-map::before {
+  content: url("");
+  width: 50%;
+  height: 50%;
+  border-left: 2px dashed #eeb436;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: -2;
 }
 
 .why-fail-section-grid-map .col-12 {
@@ -1550,7 +1563,18 @@ textarea {
           flex-direction: column;
   justify-items: center;
   position: relative;
-  z-index: 11;
+  z-index: 3;
+}
+
+.sectors-cards::before {
+  content: url("");
+  width: 50%;
+  height: 20%;
+  border-left: 2px dashed #eeb436;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  z-index: -12;
 }
 
 .sub-cards-section .col-md-6 {
@@ -1558,7 +1582,18 @@ textarea {
 }
 
 .sub-cards-section-bottom .col-md-6 .sectors-cards {
-  margin-left: 30px;
+  margin: 0 20px;
+}
+
+.sub-cards-section-bottom .sectors-cards::before {
+  content: url("");
+  width: 52%;
+  height: 110%;
+  border-left: 2px dashed #eeb436;
+  position: absolute;
+  top: -110%;
+  left: 50%;
+  z-index: -12;
 }
 
 .sectors-cards p {
@@ -1571,6 +1606,32 @@ textarea {
 
 .top-bar-left {
   position: relative;
+}
+
+.sub-cards-section {
+  position: relative;
+}
+
+.sub-cards-section::before {
+  content: url("");
+  width: 80%;
+  height: 20%;
+  border-top: 2px dashed #eeb436;
+  position: absolute;
+  top: -16%;
+  left: 9.8%;
+  z-index: 12;
+}
+
+.sub-cards-section::after {
+  content: url("");
+  width: 81%;
+  height: 100%;
+  border-bottom: 2px dashed #eeb436;
+  position: absolute;
+  bottom: -20%;
+  left: 9.5%;
+  z-index: 12;
 }
 
 .top-bar-right {

@@ -4,6 +4,15 @@ function expand() {
   navbar.classList.toggle("expand");
   bar.classList.toggle("show");
 }
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  console.log("done");
+  document.documentElement.scrollTop = 0;
+}
+document.querySelectorAll(".top-btn").forEach((e) => {
+  e.addEventListener("click", topFunction);
+});
 var element = document.querySelectorAll(".social-fixed");
 var code = `<div class="sticky-social">
 <ul class="social">
