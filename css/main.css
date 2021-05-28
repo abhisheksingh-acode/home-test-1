@@ -275,7 +275,7 @@ body {
   right: -100%;
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
-  z-index: 4;
+  z-index: 11;
 }
 
 .navigation ul {
@@ -286,6 +286,12 @@ body {
 .navigation ul li {
   color: white;
   margin-top: 20px;
+}
+
+.navigation ul li .active {
+  padding: 3px 0;
+  border: none;
+  border-bottom: 2px solid white;
 }
 
 .navigation ul li a {
@@ -311,6 +317,7 @@ body {
   top: 0;
   right: 0;
   opacity: 0;
+  z-index: 15;
 }
 
 .swiperMain {
@@ -1655,6 +1662,14 @@ textarea {
   margin: 0 20px;
 }
 
+.sub-cards-section-bottom {
+  margin: 0 auto !important;
+}
+
+.sub-cards-section-bottom .col-md-6 {
+  margin: 0;
+}
+
 .sub-cards-section-bottom .sectors-cards::before {
   content: url("");
   width: 52%;
@@ -1727,6 +1742,25 @@ textarea {
 
 #director-home-section .text-area-director {
   margin-bottom: 40px;
+}
+
+.our-director-content {
+  overflow: hidden;
+}
+
+.our-director-content #tilt-img::after {
+  right: -37px;
+}
+
+.our-director-content .left-tilt-section p {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  white-space: normal;
+}
+
+.our-director-content .para-section {
+  padding: 0 15px;
 }
 
 .left-tilt-section {
@@ -2800,6 +2834,12 @@ address {
     height: 200px;
     padding: 0;
   }
+  .sub-cards-section::before,
+  .sub-cards-section::after,
+  .sectors-cards::before,
+  .why-fail-section-grid-map::before {
+    display: none;
+  }
   /* our director  */
   #director-home-section {
     height: 300px;
@@ -3005,6 +3045,12 @@ address {
   #projects-home-section {
     height: 300px;
   }
+  .nos-div {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    padding: 5px 10px;
+  }
   .nos-div h1 {
     font-size: 17px;
   }
@@ -3014,6 +3060,9 @@ address {
   .empty-container {
     height: 200px;
     margin: 80px 0;
+  }
+  .project-gallery::before {
+    height: calc(100% + 9px);
   }
 }
 /*# sourceMappingURL=main.css.map */

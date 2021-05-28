@@ -38,16 +38,25 @@
     <div class="navigation ">
       <ul class="">
         <li class="">
-          <a href="/">HOME</a>
+          <a class="active" href="/">HOME</a>
         </li>
         <li class="">
           <a class="" href="about.html" id="about">ABOUT</a>
+        </li>
+        <li class="">
+          <a class="" href="ourDirector.html" id="about">OUR DIRECTOR</a>
+        </li>
+        <li class="">
+          <a class="" href="ourTeam.html" id="about">OUR TEAM</a>
         </li>
         <li class="">
           <a class="" href="service.html">SERVICES</a>
         </li>
         <li class="">
           <a class="" href="sectors.html">SECTORS</a>
+        </li>
+        <li class="">
+          <a class="" href="sectors.html">WHAT SETS MAGI-A</a>
         </li>
         <li class="">
           <a class="" href="projects.html">PROJECTS</a>
@@ -74,7 +83,7 @@
               <a class="nav-link active" aria-current="page" href="/">HOME</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="about.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link" href="about.html" id="navbarDropdown about" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 ABOUT
               </a>
@@ -88,7 +97,7 @@
               <a class="nav-link" href="service.html">SERVICES</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link " href="about.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link " href="about.html" id="navbarDropdown sectors" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 SECTORS
               </a>

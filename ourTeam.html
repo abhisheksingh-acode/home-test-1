@@ -28,10 +28,16 @@
       <div class="navigation ">
          <ul class="">
             <li class="">
-               <a href="/">HOME</a>
+               <a class="" href="/">HOME</a>
             </li>
             <li class="">
-               <a class=" active" aria-current="page" href="about.html" id="about">ABOUT</a>
+               <a class="" href="about.html" id="about">ABOUT</a>
+            </li>
+            <li class="">
+               <a class="" href="ourDirector.html" id="about">OUR DIRECTOR</a>
+            </li>
+            <li class="">
+               <a class="active" href="ourTeam.html" id="about">OUR TEAM</a>
             </li>
             <li class="">
                <a class="" href="service.html">SERVICES</a>
@@ -40,10 +46,13 @@
                <a class="" href="sectors.html">SECTORS</a>
             </li>
             <li class="">
+               <a class="" href="whatsetmagi.html">WHAT SETS MAGI-A</a>
+            </li>
+            <li class="">
                <a class="" href="projects.html">PROJECTS</a>
             </li>
             <li class="">
-               <a class="" href="blogs.html">BLOGS</a>
+               <a class="" href="blogs.html">BLOG</a>
             </li>
             <li class="">
                <a class="" href="contactUs.html">CONTACT</a>
@@ -52,31 +61,46 @@
       </div>
       <span class="bar d-block d-md-none" onclick="expand()"></span>
 
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0 px-0 os-light">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0 px-0 ">
          <div class="container py-4">
-            <a class="navbar-brand " href="/"><img src="images/magiLogo.svg" alt="" width="200px"></a>
+            <a class="navbar-brand " href="/"><img src="images/magiLogo.svg" alt="" class="img-fluid" width="200px"></a>
             <button class="navbar-toggler" type="button" style="width: 100px;" onclick="expand()">
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse d-md-block" id="navbarSupportedContent">
                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                     <a class="nav-link " href="/">HOME</a>
+                  <li class="nav-item ">
+                     <a class="nav-link" aria-current="page" href="/">HOME</a>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="about.html" id="about">ABOUT</a>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link active" href="about.html" id="navbarDropdown about" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        ABOUT
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="about.html">ABOUT</a></li>
+                        <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
+                        <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
+                     </ul>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="service.html">SERVICES</a>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="sectors.html">SECTORS</a>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link " href="about.html" id="navbarDropdown sectors" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        SECTORS
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sectors.html">SECTORS</a></li>
+                        <li><a class="dropdown-item" href="ourDirector.html">WHAT SETS MAGI-A</a></li>
+                     </ul>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="projects.html">PROJECTS</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="blogs.html">BLOGS</a>
+                     <a class="nav-link" href="blogs.html">BLOG</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="contactUs.html">CONTACT</a>
@@ -87,7 +111,6 @@
          </div>
       </nav>
    </header>
-
    <div id="team-home-section">
       <div class="text-area-team text-uppercase">
          <h1 class="about-home-title os-regular text-white">OUR<span class="spot-clr"> TEAM</span></h1>

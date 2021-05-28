@@ -215,7 +215,7 @@ body {
   top: 0;
   right: -100%;
   transition: all 0.8s ease-in-out;
-  z-index: 4;
+  z-index: 11;
 }
 .navigation ul {
   list-style: none;
@@ -224,6 +224,11 @@ body {
 .navigation ul li {
   color: white;
   margin-top: 20px;
+  .active {
+    padding: 3px 0;
+    border: none;
+    border-bottom: 2px solid white;
+  }
 }
 .navigation ul li a {
   text-decoration: none;
@@ -243,6 +248,7 @@ body {
   top: 0;
   right: 0;
   opacity: 0;
+  z-index: 15;
 }
 .swiperMain {
   padding: 0;
@@ -1295,6 +1301,10 @@ textarea {
   margin: 0 20px;
 }
 .sub-cards-section-bottom {
+  margin: 0 auto !important;
+  .col-md-6 {
+    margin: 0;
+  }
   .sectors-cards::before {
     content: url("");
     width: 52%;
@@ -1354,6 +1364,23 @@ textarea {
 }
 #director-home-section .text-area-director {
   margin-bottom: 40px;
+}
+.our-director-content {
+  #tilt-img {
+  }
+  #tilt-img::after {
+    right: -37px;
+  }
+  overflow: hidden;
+  .left-tilt-section p {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    white-space: normal;
+  }
+  .para-section {
+    padding: 0 15px;
+  }
 }
 .left-tilt-section {
   width: 25%;
@@ -1894,6 +1921,7 @@ address {
   }
   .navbar {
     background: rgba(0, 0, 0, 0.484);
+
     /* background-blend-mode: screen; */
   }
   .navbar-toggler {
@@ -2219,6 +2247,12 @@ address {
     height: 200px;
     padding: 0;
   }
+  .sub-cards-section::before,
+  .sub-cards-section::after,
+  .sectors-cards::before,
+  .why-fail-section-grid-map::before {
+    display: none;
+  }
 
   /* our director  */
   #director-home-section {
@@ -2401,6 +2435,8 @@ address {
     height: 300px;
   }
   .nos-div {
+    min-width: fit-content;
+    padding: 5px 10px;
     h1 {
       font-size: 17px;
     }
@@ -2411,5 +2447,8 @@ address {
   .empty-container {
     height: 200px;
     margin: 80px 0;
+  }
+  .project-gallery::before {
+    height: calc(100% + 9px);
   }
 }
