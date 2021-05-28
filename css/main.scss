@@ -830,6 +830,22 @@ textarea {
 
 .top-btn {
   transform: translate(0, 200px);
+  .swiper-pagination-bullet:not(.mine) {
+    display: none;
+  }
+  .swiper-pagination-bullet-active {
+    background: none !important;
+    border: none !important;
+  }
+}
+
+.mine {
+  display: hidden;
+  width: 100px !important;
+  height: 100px !important;
+  /* background: #eeb436 !important; */
+  border: none !important;
+  border-radius: 30px !important;
 }
 /* form styling ends */
 .icons a {

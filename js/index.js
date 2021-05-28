@@ -255,3 +255,13 @@ document.querySelector(".top-btn").addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+var cst = document.querySelector(".cst-btn").firstChild;
+cst.classList.add("mine");
+
+document
+  .querySelector(".mine")
+  .insertAdjacentHTML(
+    "afterbegin",
+    '<i class="fas fa-arrow-up text-dark bg-warning px-3 py-3 rounded-circle"></i>'
+  );
