@@ -165,8 +165,8 @@ body {
 .sticky-social .social li {
   padding: 10px 10px;
   font-size: 22px;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .sticky-social .social li:hover {
@@ -264,6 +264,11 @@ body {
   top: 0;
   right: 0;
   opacity: 0;
+}
+
+.swiperMain {
+  padding: 0;
+  margin: 0;
 }
 
 .swiperMain .swiper-pagination-bullet-active {

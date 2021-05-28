@@ -133,7 +133,7 @@ body {
   .social li {
     padding: 10px 10px;
     font-size: 22px;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   .social li:hover {
     margin-right: -30px;
@@ -210,7 +210,10 @@ body {
   right: 0;
   opacity: 0;
 }
-
+.swiperMain {
+  padding: 0;
+  margin: 0;
+}
 .swiperMain .swiper-pagination-bullet-active {
   background: rgb(255, 255, 255) !important;
 }
