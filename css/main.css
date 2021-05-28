@@ -147,10 +147,61 @@ body {
   width: 100vw;
 }
 
+.sticky-social-contact {
+  position: fixed;
+  bottom: -1%;
+  right: 3%;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+  z-index: 100;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.sticky-social-contact .social {
+  list-style: none;
+}
+
+.sticky-social-contact .social li {
+  /* padding: 10px 15px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background: #199939;
+  border-radius: 50%;
+}
+
+.sticky-social-contact .fab {
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.sticky-social-contact .call .fas {
+  color: #ffffff;
+  font-size: 28px;
+}
+
 .sticky-social {
   position: fixed;
-  top: 50%;
+  bottom: -1%;
   left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
   padding: 0px;
   margin: 0px;
   z-index: 100;
@@ -163,38 +214,34 @@ body {
 }
 
 .sticky-social .social li {
-  padding: 10px 10px;
+  /* padding: 10px 15px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
   font-size: 22px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.sticky-social .social li:hover {
-  margin-right: -30px;
-  -webkit-box-shadow: 2px 5px 10px grey;
-          box-shadow: 2px 5px 10px grey;
-}
-
-.sticky-social .social li:hover .fab {
-  margin-left: 20px;
+  background: #23ca4d;
+  border-radius: 20%;
 }
 
 .sticky-social .fab {
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
 
-.sticky-social .fb {
-  background-color: #3c5a98;
-}
-
-.sticky-social .twitter {
-  background-color: #1ea1f2;
-}
-
-.sticky-social .whatsapp {
-  background-color: #0eb950;
+.sticky-social .whatsapp .fab {
+  color: #ffffff;
+  font-size: 38px;
 }
 
 .navbar {
@@ -2399,6 +2446,12 @@ address {
 }
 
 @media only screen and (max-width: 600px) {
+  #home-carousel-1,
+  #home-carousel-2,
+  #home-carousel-3 {
+    background-size: cover;
+    background-position: center center;
+  }
   #what-we-do-para {
     width: 100%;
     font-size: small;
@@ -2418,7 +2471,7 @@ address {
     width: 130px;
   }
   .home-tagline {
-    font-size: large;
+    font-size: 15px;
     padding: 30px 10px;
   }
   .feature-icons {
@@ -2435,11 +2488,18 @@ address {
   .title-our-service {
     padding: 23px 0 !important;
   }
+  .title-our-service h1 {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
   #our-service {
     background-position: center 250px;
   }
   #title-our-services h6 {
     margin-top: 20px;
+  }
+  .title-our-service h6 {
+    letter-spacing: 4px;
   }
   .services-text {
     width: 90%;
@@ -2510,6 +2570,34 @@ address {
     height: 278px;
     padding: 2px;
   }
+  .swiper2 .swiper-slide::after {
+    content: url("");
+    width: 170px;
+    height: 200px;
+    border: 1px solid #f6f6f8;
+    position: absolute;
+    z-index: 1;
+    top: 109%;
+    left: 58%;
+    -webkit-transform: translate(-55%, -110%);
+            transform: translate(-55%, -110%);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .swiper2 .swiper-slide::before {
+    content: url("");
+    width: 170px;
+    height: 200px;
+    border: 1px solid #f6f6f8;
+    position: absolute;
+    z-index: 1;
+    bottom: 105%;
+    right: 58%;
+    -webkit-transform: translate(55%, 105%);
+            transform: translate(55%, 105%);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
   .excel-in-pos {
     margin-top: 88px;
     margin-bottom: 32px;
@@ -2540,7 +2628,7 @@ address {
   }
   #quoteBg {
     background-size: 300%;
-    background-position: right;
+    background-position: right center;
   }
   @-webkit-keyframes zoom-bg {
     0% {
@@ -2576,6 +2664,8 @@ address {
     height: 50px;
     line-height: 50px;
     margin-top: 0;
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
   }
   .footer-items span {
     font-size: 8px;

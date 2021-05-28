@@ -119,10 +119,12 @@ body {
   height: 100vh;
   width: 100vw;
 }
-.sticky-social {
+.sticky-social-contact {
   position: fixed;
-  top: 50%;
-  left: 0;
+  bottom: -1%;
+  right: 3%;
+  width: 50px;
+  height: 50px;
   padding: 0px;
   margin: 0px;
   z-index: 100;
@@ -131,32 +133,64 @@ body {
     list-style: none;
   }
   .social li {
-    padding: 10px 10px;
+    /* padding: 10px 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
     font-size: 22px;
     transition: all 0.4s ease-in-out;
-  }
-  .social li:hover {
-    margin-right: -30px;
-    box-shadow: 2px 5px 10px grey;
-  }
-  .social li:hover .fab {
-    margin-left: 20px;
+    background: rgb(25, 153, 57);
+    border-radius: 50%;
   }
   .fab {
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
     transition: all 0.8s ease-in-out;
   }
-  .fb {
-    background-color: #3c5a98;
-  }
-  .twitter {
-    background-color: #1ea1f2;
-  }
-  .whatsapp {
-    background-color: #0eb950;
+
+  .call .fas {
+    color: #ffffff;
+    font-size: 28px;
   }
 }
+.sticky-social {
+  position: fixed;
+  bottom: -1%;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
 
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  .social {
+    list-style: none;
+  }
+  .social li {
+    /* padding: 10px 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    transition: all 0.4s ease-in-out;
+    background: rgb(35, 202, 77);
+    border-radius: 20%;
+  }
+  .fab {
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.8s ease-in-out;
+  }
+
+  .whatsapp .fab {
+    color: #ffffff;
+    font-size: 38px;
+  }
+}
 .navbar {
   font-family: oswald light;
   background-color: #03091d44;
@@ -1848,6 +1882,12 @@ address {
 }
 
 @media only screen and (max-width: 600px) {
+  #home-carousel-1,
+  #home-carousel-2,
+  #home-carousel-3 {
+    background-size: cover;
+    background-position: center center;
+  }
   #what-we-do-para {
     width: 100%;
     font-size: small;
@@ -1866,7 +1906,7 @@ address {
     width: 130px;
   }
   .home-tagline {
-    font-size: large;
+    font-size: 15px;
     padding: 30px 10px;
   }
   .feature-icons {
@@ -1883,11 +1923,18 @@ address {
   .title-our-service {
     padding: 23px 0 !important;
   }
+  .title-our-service h1 {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
   #our-service {
     background-position: center 250px;
   }
   #title-our-services h6 {
     margin-top: 20px;
+  }
+  .title-our-service h6 {
+    letter-spacing: 4px;
   }
   .services-text {
     width: 90%;
@@ -1960,7 +2007,32 @@ address {
     height: 278px;
     padding: 2px;
   }
-
+  .swiper2 .swiper-slide::after {
+    content: url("");
+    width: 170px;
+    height: 200px;
+    border: 1px solid rgb(246, 246, 248);
+    position: absolute;
+    z-index: 1;
+    top: 109%;
+    left: 58%;
+    transform: translate(-55%, -110%);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .swiper2 .swiper-slide::before {
+    content: url("");
+    width: 170px;
+    height: 200px;
+    border: 1px solid rgb(246, 246, 248);
+    position: absolute;
+    z-index: 1;
+    bottom: 105%;
+    right: 58%;
+    transform: translate(55%, 105%);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
   .excel-in-pos {
     margin-top: 88px;
     margin-bottom: 32px;
@@ -1989,7 +2061,7 @@ address {
   }
   #quoteBg {
     background-size: 300%;
-    background-position: right;
+    background-position: right center;
   }
   @keyframes zoom-bg {
     0% {
@@ -2017,6 +2089,7 @@ address {
     height: 50px;
     line-height: 50px;
     margin-top: 0;
+    transform: translateY(11px);
   }
   .footer-items span {
     font-size: 8px;

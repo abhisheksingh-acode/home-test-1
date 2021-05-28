@@ -16,9 +16,11 @@ document.querySelectorAll(".top-btn").forEach((e) => {
 var element = document.querySelectorAll(".social-fixed");
 var code = `<div class="sticky-social">
 <ul class="social">
-<li class="fb"><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-<li class="twitter"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-<li class="whatsapp"><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+<li class="whatsapp"><a href=""><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+</ul>
+</div> <div class="sticky-social-contact">
+<ul class="social">
+<li class="call"><a href=""><i class="fas fa-phone-alt"></i></a></li>
 </ul>
 </div>`;
 

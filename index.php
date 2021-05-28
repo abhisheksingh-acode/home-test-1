@@ -73,14 +73,29 @@
             <li class="nav-item ">
               <a class="nav-link active" aria-current="page" href="/">HOME</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html" id="about">ABOUT</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="about.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                ABOUT
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="about.html">ABOUT</a></li>
+                <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
+                <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="service.html">SERVICES</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sectors.html">SECTORS</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="about.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                SECTORS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="sectors.html">SECTORS</a></li>
+                <li><a class="dropdown-item" href="ourDirector.html">WHAT SETS MAGI-A</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="projects.html">PROJECTS</a>
