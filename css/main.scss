@@ -292,7 +292,7 @@ body {
   bottom: 80px;
 }
 
-#home-carousel-1 {
+#home-carousel {
   background-image: url("../images/home-1.jpg");
   background-size: cover;
   background-position: top center;
@@ -305,7 +305,7 @@ body {
   background-image: url("../images/home-3.png");
   background-size: 100% 110%;
 }
-#home-carousel-1,
+#home-carousel,
 #home-carousel-2,
 #home-carousel-3 {
   background-color: #03091d63;
@@ -739,7 +739,7 @@ body {
   top: -25px;
   left: -25px;
   transform: rotate(-3deg);
-  box-shadow: 4px 3px 90px rgba(0, 0, 0, 0.26);
+  box-shadow: 4px 3px 30px -5px rgba(0, 0, 0, 0.26);
   border-radius: 4px;
 }
 #tilt-img::after {
@@ -752,7 +752,7 @@ body {
   top: 25px;
   right: -50px;
   transform: rotate(2deg);
-  box-shadow: 4px 3px 90px rgba(0, 0, 0, 0.26);
+  box-shadow: 4px 3px 30px -5px rgba(0, 0, 0, 0.26);
   border-radius: 4px;
 }
 
@@ -1930,10 +1930,6 @@ address {
 }
 
 @media only screen and (max-width: 600px) {
-  #home-carousel-1 {
-    background-image: url("../images/home-1.jpg");
-  }
-  #home-carousel-1,
   #home-carousel-2,
   #home-carousel-3 {
     background-size: cover !important;
@@ -2297,6 +2293,15 @@ address {
   #team-home-section {
     height: 300px;
   }
+  .heading-our-team {
+    .side-flags-dark::after {
+      right: 7px;
+    }
+    .side-flags-dark::before {
+      width: 37px;
+      left: 9px;
+    }
+  }
   .team-rows #tilt-img::before {
     content: url("");
     width: 105px;
@@ -2395,6 +2400,9 @@ address {
   #contact-home-section {
     height: 300px;
   }
+  #contact-home-section .sectors-tagline {
+    font-size: 18px !important;
+  }
   .contact-home-title {
     font-size: 35px;
   }
@@ -2432,6 +2440,16 @@ address {
   .what-sets-home-title {
     font-size: 28px !important;
     letter-spacing: 0;
+  }
+  .heading-what-sets-magia .side-flags-dark::after {
+    width: 40px;
+    right: 0%;
+    height: 6px;
+  }
+  .heading-what-sets-magia .side-flags-dark::before {
+    width: 40px;
+    height: 6px;
+    left: 0%;
   }
   .outer-inner-bar-div {
     width: 95%;

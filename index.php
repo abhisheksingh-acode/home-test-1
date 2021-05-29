@@ -145,7 +145,7 @@
             <div class="swiper-slide " id="#home">
               <div
                 class="container-fluid h-100 text-white p-0 mx-auto d-flex flex-column justify-content-center align-items-center "
-                id="home-carousel-1">
+                id="home-carousel">
                 <div class="text-content-home text-center">
                   <h4 class="os-light side-flags" id="start-yours-home">
                     start <span class="spot-clr">your</span>
