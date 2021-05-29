@@ -20,7 +20,7 @@ var code = `<div class="sticky-social">
 </ul>
 </div> <div class="sticky-social-contact">
 <ul class="social">
-<li class="call"><a href=""><i class="fas fa-phone-alt"></i></a></li>
+<li class="call"><a href="tel:01291234567"><i class="fas fa-phone-alt"></i></a></li>
 </ul>
 </div>`;
 
