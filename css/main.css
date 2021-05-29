@@ -2526,7 +2526,7 @@ address {
 @media only screen and (max-width: 600px) {
   #home-carousel {
     background-color: #03091d63;
-    background-position: -123px center;
+    background-position: -122px center;
     background-repeat: no-repeat;
     background-size: 182% 100%;
     background-blend-mode: multiply;
