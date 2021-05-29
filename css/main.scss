@@ -1820,15 +1820,22 @@ address {
     margin: 0 auto;
     color: #eeb436;
     position: relative;
+    z-index: 3;
+    span {
+      width: fit-content;
+      background: #f9f7f2;
+      z-index: 14;
+    }
   }
   .project-location-name::before {
     content: url("");
-    width: calc(100% - 100px);
+    width: calc(100% - 10px);
     height: 10px;
     border-top: 2px dashed #eeb436;
     position: absolute;
     top: 70%;
     right: 0;
+    z-index: -2;
   }
 }
 .project-gallery {
@@ -2512,6 +2519,9 @@ address {
   }
   .nos-div h3 {
     font-size: 13px !important;
+  }
+  .project-gallery-card-below {
+    margin: 60px 0;
   }
   .empty-container {
     height: 200px;
