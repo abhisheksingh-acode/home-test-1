@@ -278,6 +278,23 @@ body {
   z-index: 11;
 }
 
+.navigation .dropdown-menu {
+  background-color: #000 !important;
+  padding: 10px 0 !important;
+  margin: 0;
+}
+
+.dropdown-menu {
+  background-color: #03091d79;
+  font-family: oswald light !important;
+}
+
+.dropdown-item {
+  color: #f0f0f0 !important;
+  padding: 3px 10px !important;
+  font-size: 14px;
+}
+
 .navigation ul {
   list-style: none;
   margin-top: 100px;
@@ -285,11 +302,21 @@ body {
 
 .navigation ul li {
   color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  margin: 0;
   margin-top: 20px;
 }
 
+.navigation ul li a {
+  padding: 0;
+  margin: 0;
+}
+
 .navigation ul li .active {
-  padding: 3px 0;
+  padding: 0;
   border: none;
   border-bottom: 2px solid white;
 }
@@ -2652,6 +2679,9 @@ address {
   #we-excel-in ul:last-child {
     margin: 0;
   }
+  .ul-box ul {
+    margin: 0;
+  }
   #we-excel-in ul li {
     font-size: 13.5px !important;
   }
@@ -3005,13 +3035,16 @@ address {
   #what-sets-home-section {
     height: 300px;
   }
+  #what-sets-home-section .aboutUs-tagline {
+    font-size: 15px;
+  }
   .what-sets-home-title {
-    font-size: 30px;
+    font-size: 28px !important;
     letter-spacing: 0;
   }
   .outer-inner-bar-div {
-    width: 90%;
-    height: 160px;
+    width: 95%;
+    height: 200px;
     min-width: 300px;
     margin: 50px auto;
     -webkit-box-pack: center;
@@ -3035,10 +3068,11 @@ address {
         align-self: flex-start;
   }
   .outer-inner-bar-div p {
-    width: 70%;
+    width: 95%;
     font-size: 11px;
+    margin-top: 55px;
   }
-  .set-magi-home-title,
+  .what-sets-magi-home-title,
   .services-home-title,
   .sectors-home-title {
     font-size: 26px;
