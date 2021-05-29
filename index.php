@@ -37,42 +37,47 @@
   <header>
     <div class="navigation ">
       <ul class="">
-      <li class="nav-item">
-              <a class="nav-link active" href="/">HOME</a>
-            </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/">HOME</a>
+        </li>
         <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown about" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                ABOUT
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="about.html">ABOUT</a></li>
-                <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
-                <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="service.html">SERVICES</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown sectors" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                SECTORS
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="sectors.html">SECTORS</a></li>
-                <li><a class="dropdown-item" href="whatsetmagi.html">WHAT SETS MAGI-A</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">PROJECTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blogs.html">BLOG</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactUs.html">CONTACT</a>
-            </li>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapseabout"
+            id="navbarDropdown about" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            aria-controls="collapseabout">
+            ABOUT
+          </a>
+        </li>
+        <div class="collapse" id="collapseabout">
+          <div class="p-0 card-body">
+            <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+            <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
+            <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
+          </div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="service.html">SERVICES</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapsesector" id="navbarDropdown about"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="collapseabout">
+            SECTORS
+          </a>
+        </li>
+        <div class="collapse" id="collapsesector">
+          <div class="p-0 card-body">
+            <li><a class="dropdown-item" href="sectors.html">OUR SECTORS</a></li>
+            <li><a class="dropdown-item" href="whatsetmagi.html">WHAT SETS MAGI-A</a></li>
+          </div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blogs.html">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactUs.html">CONTACT</a>
+        </li>
 
       </ul>
     </div>
@@ -80,7 +85,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0 px-0 ">
       <div class="container py-4">
-        <a class="navbar-brand " href="/"><img src="images/magiLogo.svg" alt="" class="img-fluid" width="200px"></a>
+        <a class="navbar-brand " href="/"><img src="images/magiLogo.svg" alt="" class="" width="350px"></a>
         <button class="navbar-toggler" type="button" style="width: 100px;" onclick="expand()">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -90,12 +95,12 @@
               <a class="nav-link active" aria-current="page" href="/">HOME</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown about" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown about" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 ABOUT
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="about.html">ABOUT</a></li>
+                <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
                 <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
                 <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
               </ul>
@@ -104,12 +109,12 @@
               <a class="nav-link" href="service.html">SERVICES</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown sectors" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown sectors" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 SECTORS
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="sectors.html">SECTORS</a></li>
+                <li><a class="dropdown-item" href="sectors.html">OUR SECTORS</a></li>
                 <li><a class="dropdown-item" href="whatsetmagi.html">WHAT SETS MAGI-A</a></li>
               </ul>
             </li>

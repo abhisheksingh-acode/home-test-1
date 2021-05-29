@@ -149,7 +149,7 @@ body {
 
 .sticky-social-contact {
   position: fixed;
-  bottom: -1%;
+  bottom: 5%;
   right: 3%;
   width: 50px;
   height: 50px;
@@ -197,7 +197,7 @@ body {
 
 .sticky-social {
   position: fixed;
-  bottom: -1%;
+  bottom: 5%;
   left: 0;
   right: 0;
   width: 50px;
@@ -257,6 +257,11 @@ body {
           align-items: center;
 }
 
+.navbar-brand img {
+  display: block;
+  width: 230px;
+}
+
 .nav-link {
   font-size: 12px !important;
   letter-spacing: 2.5px;
@@ -278,10 +283,17 @@ body {
   z-index: 11;
 }
 
-.navigation .dropdown-menu {
-  background-color: #000 !important;
+.navigation .card-body {
+  background-color: #fff !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 10px 0 !important;
   margin: 0;
+}
+
+.navigation .dropdown-item {
+  color: #000 !important;
 }
 
 .dropdown-menu {
@@ -293,6 +305,10 @@ body {
   color: #f0f0f0 !important;
   padding: 3px 10px !important;
   font-size: 14px;
+}
+
+.dropdown-item:hover {
+  color: #000 !important;
 }
 
 .navigation ul {
@@ -1192,6 +1208,7 @@ textarea {
   font-size: 11px;
   font-family: oswald light;
   letter-spacing: 1px;
+  margin: 0 20px;
 }
 
 .footer-items span {
@@ -2507,6 +2524,13 @@ address {
 }
 
 @media only screen and (max-width: 600px) {
+  #home-carousel {
+    background-color: #03091d63;
+    background-position: -123px center;
+    background-repeat: no-repeat;
+    background-size: 182% 100%;
+    background-blend-mode: multiply;
+  }
   #home-carousel-2,
   #home-carousel-3 {
     background-size: cover !important;
@@ -2622,7 +2646,8 @@ address {
   .wwd-h {
     margin-top: 67px !important;
     padding: 20px 50px;
-    font-size: 22px;
+    letter-spacing: 5px !important;
+    font-size: 21px;
     margin-bottom: 12px;
   }
   .card-service {
