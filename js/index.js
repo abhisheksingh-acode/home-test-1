@@ -63,8 +63,8 @@ const homeSlider = new Swiper(".homeSlider", {
   // Optional parameters
   direction: "horizontal",
   slidesPerView: 1,
-  spaceBetween: 30,
-  speed: 1500,
+  spaceBetween: 0,
+  speed: 2500,
   autoplay: {
     delay: 1000,
     disableOnInteraction: false,
@@ -113,6 +113,7 @@ const swiper2 = new Swiper(".swiper2", {
   pagination: {
     el: ".portfolioPagination",
     clickable: true,
+    dynamicBullets: true,
   },
 
   breakpoints: {

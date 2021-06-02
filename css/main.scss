@@ -228,7 +228,12 @@ body {
   }
   .dropdown-item {
     color: #000 !important;
+    letter-spacing: 1px;
   }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 .dropdown-menu {
   background-color: #03091d79;
@@ -237,7 +242,8 @@ body {
 .dropdown-item {
   color: rgb(240, 240, 240) !important;
   padding: 3px 10px !important;
-  font-size: 14px;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 .dropdown-item:hover {
   color: #000 !important;
@@ -483,35 +489,21 @@ body {
 
 .swiper2 .swiper-slide {
   margin-top: 10px;
-  width: 200px;
-  height: 250px;
+  width: 230px;
+  height: 280px;
 }
 .swiper2 .swiper-pagination {
   position: absolute;
-  bottom: 30px;
+  bottom: 0;
 }
-
 .slide-img-box {
   display: block;
-  width: 200px;
+  width: 230px;
   margin: 0 auto;
-  height: 250px;
-  position: relative;
+  height: 280px;
   background-color: white;
+  position: relative;
   z-index: 3;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-.swiper2 .swiper-slide::before {
-  content: url("");
-  width: 170px;
-  height: 200px;
-  border: 1px solid rgb(246, 246, 248);
-  position: absolute;
-  z-index: 1;
-  bottom: 106%;
-  right: 60%;
-  transform: translate(55%, 105%);
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -519,12 +511,25 @@ body {
   content: url("");
   width: 170px;
   height: 200px;
-  border: 1px solid rgb(246, 246, 248);
+  border: 1px solid rgb(255, 255, 255);
   position: absolute;
-  z-index: 1;
-  top: 109%;
-  left: 60%;
-  transform: translate(-55%, -110%);
+  z-index: -1;
+  top: 34%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.swiper2 .swiper-slide::before {
+  content: url("");
+  width: 170px;
+  height: 200px;
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  z-index: -1;
+  bottom: -37%;
+  right: -26%;
+  transform: translate(-50%, -50%);
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -1048,8 +1053,11 @@ textarea {
 .who-we-are-main-content #tilt-img img {
   width: 240px;
 }
+.our-mission-section .para-section {
+  width: 80%;
+}
 .para-section {
-  font-size: 13px;
+  font-size: 14px;
   text-align: left;
   color: #050815;
   letter-spacing: 1px;
@@ -1781,7 +1789,9 @@ address {
         background: #020b2a;
       }
       label {
-        padding: 20px 0;
+        padding: 19px 0;
+        font-size: 12px;
+        letter-spacing: 1px;
       }
       .captcha-div {
         padding-top: 20px;
@@ -2014,7 +2024,7 @@ address {
   }
   .swiper2 .swiper-pagination {
     position: absolute;
-    bottom: 43px;
+    bottom: 15px;
   }
   .title-our-service {
     padding: 23px 0 !important;
@@ -2112,7 +2122,7 @@ address {
     position: absolute;
     z-index: 1;
     top: 109%;
-    left: 58%;
+    left: 63%;
     transform: translate(-55%, -110%);
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -2125,7 +2135,7 @@ address {
     position: absolute;
     z-index: 1;
     bottom: 105%;
-    right: 58%;
+    right: 63%;
     transform: translate(55%, 105%);
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
