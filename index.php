@@ -276,17 +276,17 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide slide1"><img src="./images/portfolio/portfolio1.jpg" alt=""
+              <div class="swiper-slide slide1"><img src="./images/portfolio/portfolio1.JPG" alt=""
                   class="slide-img-box img-fluid"></div>
-              <div class="swiper-slide slide2"><img src="./images/portfolio/portfolio2.jpg" alt=""
+              <div class="swiper-slide slide2"><img src="./images/portfolio/portfolio2.JPG" alt=""
                   class="slide-img-box img-fluid"></div>
-              <div class="swiper-slide slide3"><img src="./images/portfolio/portfolio3.jpg" alt=""
+              <div class="swiper-slide slide3"><img src="./images/portfolio/portfolio3.JPG" alt=""
                   class="slide-img-box img-fluid"></div>
-              <div class="swiper-slide slide4"><img src="./images/portfolio/portfolio4.jpg" alt=""
+              <div class="swiper-slide slide4"><img src="./images/portfolio/portfolio4.JPG" alt=""
                   class="slide-img-box img-fluid"></div>
-              <div class="swiper-slide slide5"><img src="./images/portfolio/portfolio5.jpg" alt=""
+              <div class="swiper-slide slide5"><img src="./images/portfolio/portfolio5.JPG" alt=""
                   class="slide-img-box img-fluid"></div>
-              <div class="swiper-slide slide6"><img src="./images/portfolio/portfolio6.jpg" alt=""
+              <div class="swiper-slide slide6"><img src="./images/portfolio/portfolio6.JPG" alt=""
                   class="slide-img-box img-fluid"></div>
               <div class="swiper-slide slide7"><img src="./images/portfolio/portfolio7.jpeg" alt=""
                   class="slide-img-box img-fluid"></div>
