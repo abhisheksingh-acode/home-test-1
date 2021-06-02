@@ -41,9 +41,8 @@
           <a class="nav-link active" href="/">HOME</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapseabout"
-            id="navbarDropdown about" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-            aria-controls="collapseabout">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapseabout" id="navbarDropdown about"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="collapseabout">
             ABOUT
           </a>
         </li>
@@ -276,18 +275,48 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide ">
-                <img src="./images/slide-1.png" class="slide-img-box" alt="" class="img-fluid">
-              </div>
-              <div class="swiper-slide ">
-                <img src="./images/slide-2.png" class="slide-img-box" alt="" class="img-fluid">
-              </div>
-              <div class="swiper-slide ">
-                <img src="./images/slide-3.png" class="slide-img-box" alt="" class="img-fluid">
-              </div>
-              <div class="swiper-slide ">
-                <img src="./images/slide-4.png" class="slide-img-box" alt="" class="img-fluid">
-              </div>
+              <div class="swiper-slide slide1"><img src="./images/portfolio/portfolio1.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide2"><img src="./images/portfolio/portfolio2.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide3"><img src="./images/portfolio/portfolio3.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide4"><img src="./images/portfolio/portfolio4.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide5"><img src="./images/portfolio/portfolio5.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide6"><img src="./images/portfolio/portfolio6.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide7"><img src="./images/portfolio/portfolio7.jpeg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide8"><img src="./images/portfolio/portfolio8.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide9"><img src="./images/portfolio/portfolio9.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide10"><img src="./images/portfolio/portfolio10.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide11"><img src="./images/portfolio/portfolio11.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide12"><img src="./images/portfolio/portfolio12.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide13"><img src="./images/portfolio/portfolio13.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide14"><img src="./images/portfolio/portfolio14.jpg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide15"><img src="./images/portfolio/portfolio15.jpeg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide16"><img src="./images/portfolio/portfolio16.jpeg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide17"><img src="./images/portfolio/portfolio17.jpeg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide18"><img src="./images/portfolio/portfolio18.jpeg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide19"><img src="./images/portfolio/portfolio19.jpeg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide20"><img src="./images/portfolio/portfolio20.jpeg" alt=""
+                  class="slide-img-box img-fluid"></div>
+              <div class="swiper-slide slide21"><img src="./images/portfolio/portfolio21.jpeg" alt=""
+                  class="slide-img-box img-fluid"></div>
 
             </div>
             <!-- If we need pagination -->

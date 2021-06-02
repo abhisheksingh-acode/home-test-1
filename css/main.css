@@ -570,7 +570,7 @@ body {
 
 /* our portfolio section  */
 #our-portfolio {
-  background: rgba(0, 0, 0, 0.336) url("../images/Mask Group 3.png") center no-repeat;
+  background: rgba(0, 0, 0, 0.192) url("../images/Mask Group 3.png") center no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
@@ -2073,6 +2073,7 @@ textarea {
   width: 70%;
   font-family: poppin-semi-bold;
   font-size: 23px;
+  white-space: pre-line;
   letter-spacing: 1px;
   line-height: 130%;
 }
