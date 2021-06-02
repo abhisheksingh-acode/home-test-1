@@ -316,7 +316,7 @@
                   class="slide-img-box img-fluid"></div>
               <div class="swiper-slide slide20"><img src="./images/portfolio/portfolio20.jpeg" alt=""
                   class="slide-img-box img-fluid"></div>
-              <div class="swiper-slide slide21"><img src="./images/portfolio/portfolio21.jpeg" alt=""
+              <div class="swiper-slide slide21"><img src="./images/portfolio/portfolio21.png" alt=""
                   class="slide-img-box img-fluid"></div>
 
             </div>

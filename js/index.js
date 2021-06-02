@@ -34,7 +34,6 @@ const swiperMain = new Swiper(".swiperMain", {
   direction: "vertical",
   mousewheel: true,
   speed: 1500,
-  cssMode: false,
   spaceBetween: 0,
   loop: false,
   keyboard: {
@@ -112,8 +111,8 @@ const swiper2 = new Swiper(".swiper2", {
   // If we need pagination
   pagination: {
     el: ".portfolioPagination",
-    clickable: true,
     dynamicBullets: true,
+    clickable: true,
   },
 
   breakpoints: {
