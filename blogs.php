@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>contact Us</title>
+   <title>blogs</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -62,10 +62,10 @@
                <a class="nav-link" href="projects.html">PROJECTS</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="blogs.php">BLOG</a>
+               <a class="nav-link active" href="blogs.html">BLOG</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link active" href="contactUs.html">CONTACT</a>
+               <a class="nav-link" href="contactUs.html">CONTACT</a>
             </li>
 
          </ul>
@@ -111,10 +111,10 @@
                      <a class="nav-link" href="projects.html">PROJECTS</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="blogs.php">BLOG</a>
+                     <a class="nav-link active" href="blogs.html">BLOG</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link active" href="contactUs.html">CONTACT</a>
+                     <a class="nav-link" href="contactUs.html">CONTACT</a>
                   </li>
 
                </ul>
@@ -122,151 +122,88 @@
          </div>
       </nav>
    </header>
-   <!-- contact us home section  -->
-   <div id="contact-home-section">
+
+
+   <!-- blogs section home  -->
+   <div id="blogs-home-section">
       <!-- overlay rectangle  -->
       <img src="./images/Path 546.png" alt="" class="overlay-blue">
       <!-- overlay rectangle  -->
-      <div class="text-area-contact text-uppercase">
-         <h1 class="contact-home-title os-regular text-white p-3">CONTACT <span class="spot-clr">US</span></h1>
-         <p class="os-light sectors-tagline">Let <span class="spot-clr os-bold">MAGI-A</span> Spread its Magic over a
-            call </p>
+      <div class="text-area-blogs text-uppercase">
+         <h1 class="blogs-home-title os-regular text-white p-3">OUR <span class="spot-clr">BLOG</span></h1>
+         <p class="os-light sectors-tagline">WHAT <span class="spot-clr os-bold">MAGI-A</span> SPEAKS</p>
       </div>
    </div>
-   <!-- section  -->
-   <div class="heading-who-we-are text-center ">
-      <h1 class="side-flags-dark os-light wwd-h about-h-tags">
-         GET IN <span class="spot-clr os-bold text-shadow">TOUCH</span></h1>
-   </div>
 
+   <!-- blogs post section  -->
 
-   <!-- main section  -->
-   <div class="main-contact-section container-md container-fluid w-100 d-flex flex-wrap justify-content-around">
+   <div class="blog-posts-container ">
 
-      <!-- left section contact  -->
-      <div class="left-contact-section order-md-1 order-2">
-         <address>
-            <div class="contact-row ">
-               <img src="./images/icons/Icon awesome-building.png" alt="" class="contact-icon" width="20px"
-                  height="21px">
-               <div class="">
-                  <span class="contact-address-heading">Magi-a Hospitality Consultancy
-                  </span> <br>
-                  <span>Building No. XX New Delhi 11000X
-                  </span>
-               </div>
-            </div>
-         </address>
-         <address>
-            <div class="contact-row ">
-               <img src="./images/icons/Icon material-call.png" alt="" class="contact-icon" width="20px" height="20px">
-               <div class="">
-                  <span class="contact-address-heading">Lets Call at
-                  </span> <br>
-                  <span>+91-xx29399444
-                  </span>
-               </div>
-            </div>
-         </address>
-         <address>
-            <div class="contact-row ">
-               <img src="./images/icons/Icon material-email.png" alt="" class="contact-icon" width="22px" height="18px">
-               <div class="">
-                  <span class="contact-address-heading">Let's Message
-                  </span> <br>
-                  <span>inquiry@magia.com
-                  </span>
-               </div>
-            </div>
-         </address>
-         <address>
-            <div class="contact-row ">
-               <img src="./images/icons/Icon awesome-globe.png" alt="" class="contact-icon" width="24px" height="24px">
-               <div class="">
-                  <span class="contact-address-heading">
-                     Let's visit web
-                  </span> <br>
-                  <span>www.magia.com</span>
-               </div>
-            </div>
-         </address>
-         <address>
-            <div class="contact-row ">
-               <img src="./images/icons/Icon material-location-on.png" alt="" class="contact-icon" width="18px"
-                  height="25px">
-               <div class="">
-                  <span class="contact-address-heading">Let's find location on G-map
-                  </span> <br>
-               </div>
-            </div>
-         </address>
+   <?php
+   
+   include 'server.php';
+   $authorselect = 'select * from admin where id = 1' ;
+   $authorfire = mysqli_query($conn,$authorselect);
+   $fetchauthor = mysqli_fetch_array($authorfire);
 
-         <div class="google-map-container d-flex justify-content-center align-items-center flex-column">
-            <h2 class="pop-semi-bold fs-5 text-capitalize">google map</h2>
-            <h6 class="pop-regular p-2">Loading...</h6>
+   $selectPosts = "select * from post where status = 'publish' order by id desc" ;
+   $firequery = mysqli_query($conn,$selectPosts);  
+
+   while ($fetch_posts_array = mysqli_fetch_array($firequery)) {
+      
+      ?>
+   <div class="blog-post">
+         <h4 class="blog-post-topic w-75">
+            <?php echo $fetch_posts_array['topic']; ?>
+         </h4>
+         <ul class="profile-list">
+            <li class="profile">
+               <img src="<?php echo $fetchauthor['image'] ;?>" alt="" class="blog-post-profile rounded-circle" width="40px" height="40px">
+               <span class="profile-name">
+               <?php echo $fetchauthor['username']; ?>
+               </span>
+            </li>
+            <li class="date"><img src="./images/icons/Icon ionic-ios-time.png" alt="">
+            <?php echo $fetch_posts_array['date']; ?>
+         </li>
+            <li class="like"><img src="./images/icons/Icon ionic-ios-heart.png" alt=""> 1.2M</li>
+            <li class="comment"><img src="./images/icons/Icon material-mode-comment.png" alt=""> 55K</li>
+            <li class="share"><img src="./images/icons/Icon awesome-share-alt.png" alt=""></li>
+         </ul>
+
+         <div class="blog-post-feature-img-box">
+            <img src="<?php echo $fetch_posts_array['image'] ; ?>" alt="">
          </div>
-      </div>
 
-      <!-- right section contact  -->
-      <div class="right-contact-section order-1 order-md-2">
-         <div class="form-container mx-auto d-flex flex-column justify-content-center">
-            <h5 class="text-uppercase text-left px-5 os-regular">reach out to us</h5>
-
-            <form action="" method="get" class="form-footer">
-               <div class="form-input-control">
-                  <div class="label">
-                     <label for="name">Name</label>
-                  </div>
-                  <input type="text" required placeholder="Enter Your Name" name="name">
-               </div>
-               <div class="form-input-control">
-                  <div class="label">
-                     <label for="phone">Mobile</label>
-                  </div>
-                  <input type="number" required placeholder="Enter Your Phone" name="phone">
-               </div>
-               <div class="form-input-control">
-                  <div class="label">
-                     <label for="email">Email</label>
-                  </div>
-                  <input type="email" required placeholder="Enter Your Email Id" name="email">
-               </div>
-               <div class="form-input-control">
-                  <div class="label">
-                     <label for="location">Location</label>
-                  </div>
-                  <input type="text" required placeholder="Enter Your Location" name="location">
-               </div>
-               <div class="form-input-control">
-                  <div class="label">
-                     <label for="interest">Interest</label>
-                  </div>
-                  <input type="text" required placeholder="Enter Your Interest" name="interest">
-               </div>
-               <div class="form-input-control">
-                  <div class="label">
-                     <label for="message">Message</label>
-                  </div>
-                  <input type="text" required placeholder="Type Your Message Here" name="message" />
-               </div>
-
-               <div class="captcha-div text-center mx-auto">
-                  <img src="./images/captcha.svg" alt="" class=" d-block ms-auto">
-               </div>
-
-
-               <div class="form-input-control mt-3 px-4"></div>
-               <button class="btn btn-dark os-light rounded-pill d-block mx-auto py-3" style="letter-spacing: 3px;"
-                  type="submit">SUBMIT</button>
-            </form>
+         <div class="blog-post-para">
+         <?php echo $fetch_posts_array['content']; ?>
          </div>
       </div>
 
 
+  <?php }
+?>
+    
    </div>
 
+   <!-- recent post section aside  -->
 
+   <div class="recent-post-div ">
 
+      <h3 class="pop-semi-bold recent-heading fs-5">Recent Topics</h3>
+      <ul class="recent-post-list-link">
+         <?php
+ $selectPosts = 'select * from post ' ;
+ $firequery = mysqli_query($conn,$selectPosts);
+      while ($fetch_posts_array = mysqli_fetch_array($firequery)) {
+         ?> 
+         
+         <li><a href=""><?php echo $fetch_posts_array['topic'] ; ?></a></li>
+    <?php  }
+?>
+        
+      </ul>
+   </div>
 
 
    <!-- footer  -->
@@ -357,6 +294,7 @@
          <li class="footer-items grey-clr">Designed By <span class="text-uppercase text-white">Awarno.com</span></li>
       </ul>
    </div>
+
 
    <!-- scripts   -->
    <script src="./aos/aos.js"></script>

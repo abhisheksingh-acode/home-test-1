@@ -28,7 +28,7 @@
   <title>Home magi-a</title>
 </head>
 
-<body>
+<body class="bg-dark">
   <!-- social-bar-fixed  -->
   <div class="social-fixed"></div>
 
@@ -73,7 +73,7 @@
           <a class="nav-link" href="projects.html">PROJECTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="blogs.html">BLOG</a>
+          <a class="nav-link" href="blogs.php">BLOG</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contactUs.html">CONTACT</a>
@@ -122,7 +122,7 @@
               <a class="nav-link" href="projects.html">PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blogs.html">BLOG</a>
+              <a class="nav-link" href="blogs.php">BLOG</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contactUs.html">CONTACT</a>

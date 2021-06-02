@@ -22,7 +22,7 @@ a {
 }
 
 body {
-  background: black;
+  background: #f9f7f2;
   overflow-x: hidden;
 }
 
@@ -2070,9 +2070,9 @@ textarea {
 }
 
 .blog-posts-container .blog-post .blog-post-topic {
+  width: 70%;
   font-family: poppin-semi-bold;
   font-size: 23px;
-  white-space: pre-line;
   letter-spacing: 1px;
   line-height: 130%;
 }
@@ -2525,6 +2525,29 @@ address {
   top: -25%;
   left: 50%;
   z-index: -11;
+}
+
+#blog-dashboard-left {
+  width: 200px !important;
+  background-color: #000;
+}
+
+#postTableSection,
+#addPostSection {
+  overflow-y: auto;
+  margin-bottom: 200px;
+}
+
+.adminLoginPage {
+  background: rgba(27, 27, 27, 0.61) url("../images/ourProjects.png") center no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  -webkit-animation: zoom-bg 4s infinite linear alternate;
+          animation: zoom-bg 4s infinite linear alternate;
+}
+
+#postTableSection::-webkit-scrollbar {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
